@@ -1,0 +1,59 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public abstract class SetupQuizzBase : MonoBehaviour
+{
+    public abstract QuizzType Type { get; }
+    [Header("UI")]
+    [SerializeField] protected Transform contentHolder;
+    [SerializeField] protected Button continueBtn;
+    [SerializeField] protected Image finalAnswerImage;
+    [SerializeField] protected TextMeshProUGUI questionText;
+    [SerializeField] protected TextMeshProUGUI answerText;
+
+    protected QuizzManager quizzManager;
+    public List<QuizzButton> QuizzButtons { get; private set; } = new List<QuizzButton>();
+    public QuizzButton SelectedQuizzButton { get; private set; }
+    public Quizz SelectedQuizz { get; private set; }
+    public virtual void Start()
+    {
+        foreach (Transform child in contentHolder)
+        {
+            QuizzButton quizzButton = child.GetComponent<QuizzButton>();
+            QuizzButtons?.Add(quizzButton);
+            quizzButton.AddSetupQuizzBase(this);
+        }
+    }
+    public void SetupNewQuizz(Quizz selectedQuizz, QuizzManager quizzManager)
+    {
+        SelectedQuizzButton = null;
+        answerText.text = "";
+        questionText.text = selectedQuizz.Question;
+        this.quizzManager = quizzManager;
+        SelectedQuizz = quizzManager.SelectedQuizz;
+    }
+
+    public void UpdateQuizzButton(QuizzButton quizzButton)
+    {
+        foreach (QuizzButton btn in QuizzButtons)
+        {
+            btn.SetSelectImage(btn == quizzButton);
+            if (btn == quizzButton)
+            {
+                SelectedQuizzButton = btn;
+            }
+        }
+    }
+    public void SetAnswerImage(Sprite sprite)
+    {
+        finalAnswerImage.sprite = sprite;
+    }
+    public void SetAnswerText(string text)
+    {
+        answerText.text = text;
+    }
+
+}
