@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: List_Image_Quizz
   m_EditorClassIdentifier: 
   Quizzes:
-  - Type: 0
-    Question: What shoes does Tralalero Tralala wear?
-    CorrectAudioClip: {fileID: 0}
+  - Question: What shoes does Tralalero Tralala wear?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: f3500f2aef04dfd43a9506badc590376, type: 3}
     QuestionSprite: {fileID: 21300000, guid: 0c47073feb399e64d9a3da31b1bbb155, type: 3}
-    QuestionAudioClip: {fileID: 0}
+    QuestionAudioClip: {fileID: 8300000, guid: f3500f2aef04dfd43a9506badc590376, type: 3}
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: 0c47073feb399e64d9a3da31b1bbb155, type: 3}
@@ -31,9 +31,9 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 6598c40670e6aa64fa0d00c77c4e8d31, type: 3}
       Text: 
-  - Type: 0
-    Question: Who is Barellina Capuccina's boy friend?
-    CorrectAudioClip: {fileID: 0}
+  - Question: Who is Barellina Capuccina's boy friend?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 352f85551e58f7b41948fcc5554b56c4, type: 3}
     QuestionSprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
     QuestionAudioClip: {fileID: 8300000, guid: 352f85551e58f7b41948fcc5554b56c4, type: 3}
     QuizzAnswers:
@@ -49,9 +49,9 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
       Text: 
-  - Type: 0
-    Question: Who is Br Br Patapim?
-    CorrectAudioClip: {fileID: 0}
+  - Question: Who is Br Br Patapim?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: bf37b58a106b0c3469214e86a29f68da, type: 3}
     QuestionSprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
     QuestionAudioClip: {fileID: 8300000, guid: bf37b58a106b0c3469214e86a29f68da, type: 3}
     QuizzAnswers:
@@ -67,8 +67,8 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 84f9c3f680af4174181d96faf25329bd, type: 3}
       Text: 
-  - Type: 0
-    Question: Who is Bombardino Crocodilo's brother?
+  - Question: Who is Bombardino Crocodilo's brother?
+    Type: 0
     CorrectAudioClip: {fileID: 8300000, guid: e1fe721d09724d647bd21d0339cf5074, type: 3}
     QuestionSprite: {fileID: 21300000, guid: 686c52199d05c5d44a7633f4bd8deb3a, type: 3}
     QuestionAudioClip: {fileID: 8300000, guid: e1fe721d09724d647bd21d0339cf5074, type: 3}
@@ -85,21 +85,3 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
       Text: 
-  - Type: 1
-    Question: Whose song is this?
-    CorrectAudioClip: {fileID: 8300000, guid: f3500f2aef04dfd43a9506badc590376, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 0c47073feb399e64d9a3da31b1bbb155, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 42d204e33b84f674b8e668063391ea6a, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 0}
-      Text: Tralalero Tralala
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Tung tung tung tung tung tung tung Sahur
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Bombardiro Crocodilo
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Lirili Rili Ralila

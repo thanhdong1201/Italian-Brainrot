@@ -9,14 +9,14 @@ public class SetupQuizz_SoundToText : SetupQuizzBase
 
     [SerializeField] private Button playSoundBtn;
 
-    public override void Start()
+    public override void InitializeContent()
     {
-        base.Start();
+        base.InitializeContent();
         playSoundBtn.onClick.AddListener(PlayQuestSound);
     }
 
     private void PlayQuestSound()
     {
-        //SoundManager.Instance.PlaySound(quizzManager.QuizzSO..Sound);
+        SoundManager.Instance.PlaySound(SelectedQuizz.QuestionAudioClip);
     }
 }

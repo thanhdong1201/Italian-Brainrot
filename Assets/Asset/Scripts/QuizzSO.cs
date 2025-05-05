@@ -24,7 +24,6 @@ public class Quizz
     public QuizzAnswer GetCorrectAnswer()
     {
         var correctAnswer = QuizzAnswers.First(answer => answer != null && answer.Answer);
-        Debug.Log($"CorrectAnswer: {correctAnswer}");
         return correctAnswer;
     }
 }

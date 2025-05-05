@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -18,7 +17,7 @@ public abstract class SetupQuizzBase : MonoBehaviour
     public List<QuizzButton> QuizzButtons { get; private set; } = new List<QuizzButton>();
     public QuizzButton SelectedQuizzButton { get; private set; }
     public Quizz SelectedQuizz { get; private set; }
-    public virtual void Start()
+    public virtual void InitializeContent()
     {
         foreach (Transform child in contentHolder)
         {
@@ -26,11 +25,15 @@ public abstract class SetupQuizzBase : MonoBehaviour
             QuizzButtons?.Add(quizzButton);
             quizzButton.AddSetupQuizzBase(this);
         }
+
+        continueBtn.onClick.AddListener(() => quizzManager.ActiveNewQuizz());
     }
     public void SetupNewQuizz(Quizz selectedQuizz, QuizzManager quizzManager)
     {
         SelectedQuizzButton = null;
+        SelectedQuizz = null;
         answerText.text = "";
+
         questionText.text = selectedQuizz.Question;
         this.quizzManager = quizzManager;
         SelectedQuizz = quizzManager.SelectedQuizz;
@@ -55,5 +58,8 @@ public abstract class SetupQuizzBase : MonoBehaviour
     {
         answerText.text = text;
     }
-
+    public void ShowContinueBtn()
+    {
+        continueBtn.gameObject.SetActive(true);
+    }
 }

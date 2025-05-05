@@ -341,7 +341,7 @@ MonoBehaviour:
   correctImage: {fileID: 6225678606638051416}
   wrongImage: {fileID: 3038014704512487815}
   answerText: {fileID: 1803961638110577951}
-  scaleFactor: 0.8
+  scaleFactor: 1.1
   duration: 0.2
 --- !u!1 &2916486327426288082
 GameObject:

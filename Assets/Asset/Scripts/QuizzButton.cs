@@ -22,7 +22,6 @@ public class QuizzButton : MonoBehaviour
     [SerializeField] private float scaleFactor = 0.8f;
     [SerializeField] private float duration = 0.2f;
 
-    private QuizzManager quizzManager;
     private Tween tween;
     private Vector3 localScale;
     private void Awake()
@@ -40,14 +39,13 @@ public class QuizzButton : MonoBehaviour
     }
     public void SetUp(QuizzAnswer quizzAnswer, QuizzManager quizzManager)
     {
-        this.quizzManager = quizzManager;
         QuizzAnswer = quizzAnswer;
 
-        if (this.quizzManager.SelectedQuizz.Type == QuizzType.TextToImage)
+        if (setupQuizzBase.SelectedQuizz.Type == QuizzType.TextToImage)
         {
             answerImage.sprite = quizzAnswer.Sprite;
         }
-        if (this.quizzManager.SelectedQuizz.Type == QuizzType.ImageToText || this.quizzManager.SelectedQuizz.Type == QuizzType.SoundToText)
+        if (setupQuizzBase.SelectedQuizz.Type == QuizzType.ImageToText || setupQuizzBase.SelectedQuizz.Type == QuizzType.SoundToText)
         {
             answerText.text = quizzAnswer.Text;
         }
@@ -55,7 +53,7 @@ public class QuizzButton : MonoBehaviour
         selectImage.gameObject.SetActive(false);
         correctImage.gameObject.SetActive(false);
         wrongImage.gameObject.SetActive(false);
-        quizzManager.UpdateQuizzButton(null);
+        setupQuizzBase.UpdateQuizzButton(null);
         PlayAnimation(false);
     }
     public void SetSelectImage(bool isSelected)
@@ -65,7 +63,7 @@ public class QuizzButton : MonoBehaviour
     }
     public void SelectThisImage()
     {
-        quizzManager.UpdateQuizzButton(this);
+        setupQuizzBase.UpdateQuizzButton(this);
     }
     public void ShowAnswer(bool isCorrect)
     {
