@@ -15,14 +15,19 @@ public class SliderBar : MonoBehaviour
 
     private void OnEnable()
     {
-        onRestartCoutDown.OnEventRaised += StartAnimation;
+        onRestartCoutDown.OnEventRaised += WaitToRestart;
     }
     private void OnDisable()
     {
-        onRestartCoutDown.OnEventRaised -= StartAnimation;
+        onRestartCoutDown.OnEventRaised -= WaitToRestart;
     }
 
-    public void StartAnimation()
+    private void WaitToRestart()
+    {
+        fillImage.fillAmount = 1f;
+        Invoke(nameof(StartAnimation), 2f);
+    }
+    private void StartAnimation()
     {
         StopAnimation();
 

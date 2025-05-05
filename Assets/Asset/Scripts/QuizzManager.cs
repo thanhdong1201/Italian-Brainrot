@@ -45,7 +45,7 @@ public class QuizzManager : MonoBehaviour
     }
     private void Start()
     {
-        StartGame();
+        ActiveNewQuizz();
     }
     private void InitializeQuizzUI()
     {
@@ -68,7 +68,7 @@ public class QuizzManager : MonoBehaviour
             if (setupQuizz.Key == quizzType)
             {
                 setupQuizzBase = setupQuizz.Value;
-                setupQuizz.Value.SetupNewQuizz(SelectedQuizz, this);
+                setupQuizz.Value.SetupNewQuizz(SelectedQuizz);
             }
         }
     }
@@ -77,10 +77,13 @@ public class QuizzManager : MonoBehaviour
         SelectedQuizz = null;
         selectedQuizzButton = null;
         onRestartCoutDown?.RaiseEvent();
-        SoundManager.Instance.StopSound();
+        SoundManager.Instance.StopMusic();
     }
     public void ActiveNewQuizz()
     {
+        if (quizzSOInstance.Quizzes.Count == 0) return;
+
+        continueBtn.interactable = false;
         ResetQuizz();
         GetRandomQuizz();
         GetRandomQuizzAnswer();
@@ -130,16 +133,25 @@ public class QuizzManager : MonoBehaviour
     private void CorrectQuizz()
     {
         setupQuizzBase.SetAnswerText(corrects[Random.Range(0, corrects.Count)]);
-        SoundManager.Instance.PlaySound(SelectedQuizz.CorrectAudioClip);
+        SoundManager.Instance.PlayCorrectSound();
+        SoundManager.Instance.PlayMusic(SelectedQuizz.CorrectAudioClip);
         quizzSOInstance.Quizzes.Remove(SelectedQuizz);
 
-        if(SelectedQuizz.Type == QuizzType.TextToImage)
+        if (SelectedQuizz.Type == QuizzType.TextToImage)
         {
-            //finalAnswerImage.sprite = SelectedQuizz.GetCorrectAnswer().Sprite;
+            finalAnswerImage.sprite = SelectedQuizz.GetCorrectAnswer().Sprite;
         }
-        finalAnswerImage.sprite = SelectedQuizz.GetCorrectAnswer().Sprite;
-        setupQuizzBase.ShowContinueBtn();
-        //continueBtn.gameObject.SetActive(true);
+        if (SelectedQuizz.Type == QuizzType.ImageToText)
+        {
+            finalAnswerImage.sprite = SelectedQuizz.GetCorrectAnswer().Sprite;
+        }
+        if (SelectedQuizz.Type == QuizzType.SoundToText)
+        {
+            finalAnswerImage.sprite = SelectedQuizz.QuestionSprite;
+        }
+        //finalAnswerImage.sprite = SelectedQuizz.GetCorrectAnswer().Sprite;
+        continueBtn.gameObject.SetActive(true);
+        continueBtn.interactable = true;
     }
     private void FailQuizz()
     {
@@ -147,11 +159,6 @@ public class QuizzManager : MonoBehaviour
         SoundManager.Instance.PlayIncorrectSound();
         Invoke(nameof(ActiveNewQuizz), 3f);
     }
-    public void StartGame()
-    {
-        ActiveNewQuizz();
-    }
-
     private void CompleteQuizzes()
     {
 

@@ -5,9 +5,11 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance { get; private set; }
+    [SerializeField] private AudioClip correctSound;
     [SerializeField] private AudioClip incorrectSound;
 
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource soundfxSource;
     private void Awake()
     {
         if (Instance == null)
@@ -20,27 +22,34 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        audioSource = GetComponent<AudioSource>();
     }
-    public void PlaySound(AudioClip clip)
+    public void PlayMusic(AudioClip clip)
     {
         if (clip != null)
         {
-            if (audioSource.isPlaying)
+            if (musicSource.isPlaying)
             {
-                audioSource.Stop();
+                musicSource.Stop();
             }
-            audioSource.clip = clip;
-            audioSource.Play();
+            musicSource.clip = clip;
+            musicSource.Play();
         }
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        soundfxSource.PlayOneShot(clip);
+    }
+    public void PlayCorrectSound()
+    {
+        PlaySound(correctSound);
     }
     public void PlayIncorrectSound()
     {
         PlaySound(incorrectSound);
     }
-    public void StopSound()
+    public void StopMusic()
     {
-        if (audioSource.isPlaying)
+        if (musicSource.isPlaying)
         {
             StartCoroutine(FadeOutAndStop());
         }
@@ -48,15 +57,15 @@ public class SoundManager : MonoBehaviour
 
     private IEnumerator FadeOutAndStop()
     {
-        float startVolume = audioSource.volume;
+        float startVolume = musicSource.volume;
 
-        while (audioSource.volume > 0)
+        while (musicSource.volume > 0)
         {
-            audioSource.volume -= startVolume * Time.deltaTime / 0.5f; // Fade out over 2 seconds  
+            musicSource.volume -= startVolume * Time.deltaTime / 0.5f; // Fade out over 2 seconds  
             yield return null;
         }
 
-        audioSource.Stop();
-        audioSource.volume = startVolume; // Reset volume for future use  
+        musicSource.Stop();
+        musicSource.volume = startVolume; // Reset volume for future use  
     }
 }

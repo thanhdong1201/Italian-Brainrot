@@ -8,15 +8,16 @@ public abstract class SetupQuizzBase : MonoBehaviour
     public abstract QuizzType Type { get; }
     [Header("UI")]
     [SerializeField] protected Transform contentHolder;
-    [SerializeField] protected Button continueBtn;
-    [SerializeField] protected Image finalAnswerImage;
+    //[SerializeField] protected Button continueBtn;
+    //[SerializeField] protected Image finalAnswerImage;
     [SerializeField] protected TextMeshProUGUI questionText;
     [SerializeField] protected TextMeshProUGUI answerText;
 
-    protected QuizzManager quizzManager;
+    [SerializeField] protected QuizzManager quizzManager;
     public List<QuizzButton> QuizzButtons { get; private set; } = new List<QuizzButton>();
     public QuizzButton SelectedQuizzButton { get; private set; }
     public Quizz SelectedQuizz { get; private set; }
+
     public virtual void InitializeContent()
     {
         foreach (Transform child in contentHolder)
@@ -26,16 +27,20 @@ public abstract class SetupQuizzBase : MonoBehaviour
             quizzButton.AddSetupQuizzBase(this);
         }
 
-        continueBtn.onClick.AddListener(() => quizzManager.ActiveNewQuizz());
+        //continueBtn.onClick.AddListener(() =>
+        //{
+        //    quizzManager.ActiveNewQuizz();
+        //    continueBtn.interactable = false;
+        //});
     }
-    public void SetupNewQuizz(Quizz selectedQuizz, QuizzManager quizzManager)
+    public virtual void SetupNewQuizz(Quizz selectedQuizz)
     {
         SelectedQuizzButton = null;
         SelectedQuizz = null;
         answerText.text = "";
+        //continueBtn.interactable = true;
 
         questionText.text = selectedQuizz.Question;
-        this.quizzManager = quizzManager;
         SelectedQuizz = quizzManager.SelectedQuizz;
     }
 
@@ -50,16 +55,13 @@ public abstract class SetupQuizzBase : MonoBehaviour
             }
         }
     }
-    public void SetAnswerImage(Sprite sprite)
-    {
-        finalAnswerImage.sprite = sprite;
-    }
+    //public void SetFinalAnswerImage(Sprite sprite)
+    //{
+    //    continueBtn.gameObject.SetActive(true);
+    //    finalAnswerImage.sprite = sprite;
+    //}
     public void SetAnswerText(string text)
     {
         answerText.text = text;
-    }
-    public void ShowContinueBtn()
-    {
-        continueBtn.gameObject.SetActive(true);
     }
 }

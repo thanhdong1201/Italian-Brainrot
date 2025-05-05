@@ -17,6 +17,6 @@ public class SetupQuizz_SoundToText : SetupQuizzBase
 
     private void PlayQuestSound()
     {
-        SoundManager.Instance.PlaySound(SelectedQuizz.QuestionAudioClip);
+        SoundManager.Instance.PlayMusic(SelectedQuizz.QuestionAudioClip);
     }
 }

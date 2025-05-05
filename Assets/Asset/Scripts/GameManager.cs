@@ -26,6 +26,6 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame()
     {
-        QuizzManager.StartGame();
+        //QuizzManager.StartGame();
     }
 }
