@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class QuizzManager : MonoBehaviour
 {
     [Header("UI")]
+    [SerializeField] private TextMeshProUGUI quizzNumberText;
     [SerializeField] private Button continueBtn;
     [SerializeField] private Image finalAnswerImage;
     [SerializeField] private List<string> corrects = new List<string>();
@@ -13,28 +15,34 @@ public class QuizzManager : MonoBehaviour
     [SerializeField] private SetupQuizz_TextToImage setupQuizz_TextToImage;
     [SerializeField] private SetupQuizz_ImageToText setupQuizz_ImageToText;
     [SerializeField] private SetupQuizz_SoundToText setupQuizz_SoundToText;
-    [SerializeField] private SetupQuizzBase setupQuizzBase;
 
     [Header("Image Quizz")]
     [SerializeField] private QuizzSO quizzSO;
 
-    [Header("Events")]
+    [Header("Listening to Events")]
     [SerializeField] private VoidEventChannelSO onCountDownCompleted;
+
+    [Header("Broadcasting Events")]
+    [SerializeField] private VoidEventChannelSO onStartGame;
     [SerializeField] private VoidEventChannelSO onRestartCoutDown;
 
     private Dictionary<QuizzType, SetupQuizzBase> setupQuizzBasesDictionary = new Dictionary<QuizzType, SetupQuizzBase>();
     private QuizzSO quizzSOInstance;
     private QuizzButton selectedQuizzButton;
+    private SetupQuizzBase setupQuizzBase;
+    private int quizzNumber = 0;
 
     public Quizz SelectedQuizz { get; private set; }
 
     private void OnEnable()
     {
         onCountDownCompleted.OnEventRaised += CheckQuizz;
+        onStartGame.OnEventRaised += ActiveNewQuizz;
     }
     private void OnDisable()
     {
         onCountDownCompleted.OnEventRaised -= CheckQuizz;
+        onStartGame.OnEventRaised -= ActiveNewQuizz;
     }
     private void Awake()
     {
@@ -42,10 +50,6 @@ public class QuizzManager : MonoBehaviour
         continueBtn.onClick.AddListener(() => ActiveNewQuizz());
 
         InitializeQuizzUI();
-    }
-    private void Start()
-    {
-        //ActiveNewQuizz();
     }
     private void InitializeQuizzUI()
     {
@@ -81,7 +85,11 @@ public class QuizzManager : MonoBehaviour
     }
     public void ActiveNewQuizz()
     {
-        if (quizzSOInstance.Quizzes.Count == 0) return;
+        if (quizzSOInstance.IsGameCompleted())
+        {
+            CompleteQuizzes(); 
+            return;
+        }
 
         continueBtn.interactable = false;
         ResetQuizz();
@@ -90,12 +98,13 @@ public class QuizzManager : MonoBehaviour
     }
     public void GetRandomQuizz()
     {
-        if (quizzSOInstance.Quizzes.Count == 0) return;
-
         int randomQuizzIndex = Random.Range(0, quizzSOInstance.Quizzes.Count);
         SelectedQuizz = quizzSOInstance.Quizzes[randomQuizzIndex];
         quizzSOInstance.Quizzes.RemoveAt(randomQuizzIndex);
         ShowQuizzUI(SelectedQuizz.Type);
+
+        quizzNumber++;
+        quizzNumberText.text = $"Question {quizzNumber}/{quizzSOInstance.TotalQuizzPerGame}";
     }
     public void GetRandomQuizzAnswer()
     {
@@ -128,6 +137,7 @@ public class QuizzManager : MonoBehaviour
         }
 
         selectedQuizzButton.ShowAnswer(selectedQuizzButton.QuizzAnswer.Answer);
+        quizzSOInstance.OnQuizzCompleted();
     }
 
     private void CorrectQuizz()
@@ -136,6 +146,7 @@ public class QuizzManager : MonoBehaviour
         SoundManager.Instance.PlayCorrectSound();
         SoundManager.Instance.PlayMusic(SelectedQuizz.CorrectAudioClip);
         quizzSOInstance.Quizzes.Remove(SelectedQuizz);
+        quizzSOInstance.OnCorrectAnswer();
 
         if (SelectedQuizz.Type == QuizzType.TextToImage)
         {
@@ -149,7 +160,7 @@ public class QuizzManager : MonoBehaviour
         {
             finalAnswerImage.sprite = SelectedQuizz.QuestionSprite;
         }
-        //finalAnswerImage.sprite = SelectedQuizz.GetCorrectAnswer().Sprite;
+
         continueBtn.gameObject.SetActive(true);
         continueBtn.interactable = true;
     }
@@ -161,6 +172,37 @@ public class QuizzManager : MonoBehaviour
     }
     private void CompleteQuizzes()
     {
-
+        UIManager.Instance.ShowPanel(UIPanel.Complete);
     }
+    public StarRating CalculateStarRating()
+    {
+        int correctAnswers = quizzSOInstance.TotalCorrectAnswers;
+        int maxQuizz = quizzSOInstance.TotalQuizzPerGame;
+
+        float correctRatio = (float)correctAnswers / maxQuizz;
+
+        if (correctRatio >= 0.99f) // >= 99%
+            return StarRating.ThreeStars;
+        else if(correctRatio >= 0.7f) // 70% - 99%
+            return StarRating.TwoStars;
+        else if(correctRatio >= 0.5f) // 50% - 69%
+            return StarRating.OneStar;
+        else
+            return StarRating.ZeroStars;
+    }
+    public int GetTotalCorrectAnswers()
+    {
+        return quizzSOInstance.TotalCorrectAnswers;
+    }
+    public int GetMaxQuizz()
+    {
+        return quizzSOInstance.TotalQuizzPerGame;
+    }
+}
+public enum StarRating
+{
+    ZeroStars = 0,
+    OneStar = 1,
+    TwoStars = 2,
+    ThreeStars = 3
 }

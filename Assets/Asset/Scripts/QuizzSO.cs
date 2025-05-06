@@ -7,6 +7,34 @@ using UnityEngine;
 public class QuizzSO : ScriptableObject
 {
     public List<Quizz> Quizzes = new List<Quizz>();
+
+    [SerializeField] private int totalQuizzPerGame = 10;
+    public int TotalQuizzPerGame => totalQuizzPerGame;
+    private int totalCorrectAnswers = 0;
+    public int TotalCorrectAnswers => totalCorrectAnswers;
+    public int QuizzCount { get; private set; } = 0;
+    private bool isGameCompleted = false;
+    public bool IsGameCompleted() => isGameCompleted;
+
+    public void OnCorrectAnswer()
+    {
+        if (isGameCompleted) return;
+
+        totalCorrectAnswers++;
+    }
+    public void OnQuizzCompleted()
+    {
+        if (isGameCompleted) return;
+
+        QuizzCount++;
+
+        if (QuizzCount >= totalQuizzPerGame)
+        {
+            isGameCompleted = true;
+        }
+    }
+
+
 }
 
 [Serializable]

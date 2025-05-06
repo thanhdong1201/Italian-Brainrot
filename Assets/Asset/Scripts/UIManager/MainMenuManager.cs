@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,9 +8,6 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject chooseModePanel;
     [SerializeField] private GameObject settingsPanel;
-
-    [Header("SpecialPanels")]
-    [SerializeField] private GameObject loadingPanel;
 
     [Header("Wallpapers")]
     [SerializeField] private List<GameObject> wallpapers;
@@ -28,6 +25,7 @@ public class MainMenuManager : MonoBehaviour
     {
         ChangeWallpaper();
     }
+
     #region UIPanels
     private void InitializeUIPanels()
     {
