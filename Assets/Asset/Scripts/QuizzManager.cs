@@ -45,7 +45,7 @@ public class QuizzManager : MonoBehaviour
     }
     private void Start()
     {
-        ActiveNewQuizz();
+        //ActiveNewQuizz();
     }
     private void InitializeQuizzUI()
     {

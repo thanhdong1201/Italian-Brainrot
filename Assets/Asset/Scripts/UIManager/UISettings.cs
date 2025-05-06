@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class UISettings : MonoBehaviour
 {
+    [SerializeField] private MainMenuManager mainMenuManager;
     [Header("Buttons")]
     //[SerializeField] private Button playBtn;
     //[SerializeField] private Button settingsBtn;
@@ -16,6 +17,6 @@ public class UISettings : MonoBehaviour
     {
         //playBtn.onClick.AddListener(() => UIManager.Instance.ShowPanel(UIPanel.ChooseMode));
         //settingsBtn.onClick.AddListener(() => UIManager.Instance.ShowPanel(UIPanel.Settings));
-        quitBtn.onClick.AddListener(() => Application.Quit());
+        quitBtn.onClick.AddListener(() => mainMenuManager.ShowPanel(UIMenuPanel.Menu));
     }
 }

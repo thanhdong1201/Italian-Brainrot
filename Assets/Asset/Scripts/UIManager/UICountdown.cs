@@ -18,7 +18,7 @@ public class UICountdown : MonoBehaviour
     }
     private IEnumerator StartCountdown()
     {
-        countdownText.gameObject.SetActive(true);
+        gameObject.SetActive(true);
         countdownText.text = "Are you ready!!!";
         countdownText.transform.localScale = Vector3.one * 2f;
         countdownText.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
@@ -38,7 +38,7 @@ public class UICountdown : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         countdownText.SetText("");
-        countdownText.gameObject.SetActive(false);
+        gameObject.SetActive(false);
         GameManager.Instance.StartGame();
     }
 }

@@ -25,8 +25,9 @@ public class SliderBar : MonoBehaviour
     private void WaitToRestart()
     {
         fillImage.fillAmount = 1f;
-        Invoke(nameof(StartAnimation), 2f);
+        Invoke(nameof(StartAnimation), 1f);
     }
+    [Button]
     private void StartAnimation()
     {
         StopAnimation();
@@ -53,5 +54,6 @@ public class SliderBar : MonoBehaviour
     private void OnDestroy()
     {
         StopAnimation();
+        onRestartCoutDown.OnEventRaised -= WaitToRestart;
     }
 }

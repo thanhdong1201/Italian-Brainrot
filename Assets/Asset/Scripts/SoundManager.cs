@@ -68,4 +68,15 @@ public class SoundManager : MonoBehaviour
         musicSource.Stop();
         musicSource.volume = startVolume; // Reset volume for future use  
     }
+    public void PauseMusic(bool pause)
+    {
+        if (pause)
+        {
+            musicSource.Pause();
+        }
+        else
+        {
+            musicSource.UnPause();
+        }
+    }
 }

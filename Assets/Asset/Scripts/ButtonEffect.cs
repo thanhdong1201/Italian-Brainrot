@@ -1,11 +1,13 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class ButtonEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private float scaleFactor = 0.8f;
     [SerializeField] private float duration = 0.2f; 
+
     private Tween tween;
     private Vector3 localScale;
     private void Awake()

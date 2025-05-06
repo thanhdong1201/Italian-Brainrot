@@ -1,14 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
     [Header("Panels")]
-    [SerializeField] private GameObject mainMenuPanel;
-    [SerializeField] private GameObject chooseModePanel;
-    [SerializeField] private GameObject settingsPanel;
-    [SerializeField] private GameObject quizzModePanel;
+    [SerializeField] private GameObject gameplayPanel;
+    [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject completePanel;
     [SerializeField] private GameObject gameOverPanel;
 
@@ -19,31 +17,37 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
+        // Nếu đã có instance khác tồn tại trong scene, hủy bản mới này
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        InitializeUIPanels();
+    }
+    private void OnDestroy()
+    {
+        // Chỉ reset nếu instance này chính là cái bị hủy
+        if (Instance == this)
+        {
+            Instance = null;
         }
     }
     private void Start()
     {
-        InitializeUIPanels();
+
     }
     private void InitializeUIPanels()
     {
         uiPanels = new Dictionary<UIPanel, GameObject>
         {
-            { UIPanel.MainMenu, mainMenuPanel },
-            { UIPanel.ChooseMode, chooseModePanel },
-            { UIPanel.Settings, settingsPanel },
-            { UIPanel.QuizzMode, quizzModePanel },
+            { UIPanel.Gameplay, gameplayPanel },
+            { UIPanel.Pause, pausePanel },
             { UIPanel.Complete, completePanel },
-            { UIPanel.GameOver, gameOverPanel }
+            { UIPanel.GameOver, gameOverPanel },
         };
-        ShowPanel(UIPanel.MainMenu);
     }
     public void ShowPanel(UIPanel panel)
     {
@@ -51,18 +55,27 @@ public class UIManager : MonoBehaviour
         {
             uiPanel.Value.SetActive(uiPanel.Key == panel);
         }
-        if(panel == UIPanel.QuizzMode)
+    }
+    public void PauseGame(bool pause)
+    {
+        if (pause)
         {
-            loadingPanel.SetActive(true);
+            ShowPanel(UIPanel.Pause);
+            SoundManager.Instance.PauseMusic(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            ShowPanel(UIPanel.Gameplay);
+            SoundManager.Instance.PauseMusic(false);
+            Time.timeScale = 1;
         }
     }
 }
 public enum UIPanel
 {
-    MainMenu,
-    ChooseMode,
-    Settings,
-    QuizzMode,
+    Gameplay,
+    Pause,
     Complete,
     GameOver
 }
