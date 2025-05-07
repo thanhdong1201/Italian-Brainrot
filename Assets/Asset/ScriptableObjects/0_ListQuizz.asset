@@ -15,4 +15,4 @@ MonoBehaviour:
   easyQuizz: {fileID: 11400000, guid: d647728c62d4f10429facea119ce2dd7, type: 2}
   mediumQuizz: {fileID: 11400000, guid: 08f48dbdcdfc6f040b7efe6c1552cd47, type: 2}
   hardQuizz: {fileID: 11400000, guid: d801941195bf4324faf1582069c5bbbf, type: 2}
-  currentQuizzSO: {fileID: 11400000, guid: d647728c62d4f10429facea119ce2dd7, type: 2}
+  currentQuizzSO: {fileID: 11400000, guid: 08f48dbdcdfc6f040b7efe6c1552cd47, type: 2}

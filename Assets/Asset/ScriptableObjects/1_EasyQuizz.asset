@@ -21,12 +21,12 @@ MonoBehaviour:
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
+      Text: Boneca Ambalabu
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 0b235e23db73cb24fa14c3f2642badad, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 84f9c3f680af4174181d96faf25329bd, type: 3}
@@ -49,24 +49,6 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Lirili Rili Ralila
-  - Question: Whose song is this?
-    Type: 1
-    CorrectAudioClip: {fileID: 8300000, guid: e5b0d6e73f180634c9061489ceed0d98, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: e5b0d6e73f180634c9061489ceed0d98, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 0}
-      Text: Tung tung tung tung tung tung tung Sahur
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Chimpanzini Bananini
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Lirili Rili Ralila
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Bombardiro Crocodilo
   - Question: Whose song is this?
     Type: 1
     CorrectAudioClip: {fileID: 8300000, guid: 6f16e0c8200fd3a4182da2b8ac47ebd3, type: 3}
@@ -265,4 +247,4 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
       Text: Frigo Camelo
-  totalQuizzPerGame: 5
+  totalQuizzPerGame: 3

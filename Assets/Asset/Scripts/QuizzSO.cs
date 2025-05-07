@@ -34,7 +34,12 @@ public class QuizzSO : ScriptableObject
         }
     }
 
-
+    private void OnEnable()
+    {
+        isGameCompleted = false;
+        totalCorrectAnswers = 0;
+        QuizzCount = 0;
+    }
 }
 
 [Serializable]

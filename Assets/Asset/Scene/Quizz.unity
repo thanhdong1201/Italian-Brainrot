@@ -9567,6 +9567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4286839300330181538, guid: e5b56d746f159df48ad773d32cd488dd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4744789242764758299, guid: e5b56d746f159df48ad773d32cd488dd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -9576,6 +9580,10 @@ PrefabInstance:
       value: Panel_Wallpaper
       objectReference: {fileID: 0}
     - target: {fileID: 5508513105226943930, guid: e5b56d746f159df48ad773d32cd488dd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005794270940625467, guid: e5b56d746f159df48ad773d32cd488dd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}

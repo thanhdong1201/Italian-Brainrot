@@ -9,8 +9,6 @@ public class UILoadingBar : MonoBehaviour
     [SerializeField] private Ease easeType = Ease.Linear;
     [SerializeField] private Slider slider;
 
-    [SerializeField] private UnityEvent onFinishLoading;
-
     private Tween tween;
 
     private void OnEnable()
@@ -35,7 +33,7 @@ public class UILoadingBar : MonoBehaviour
     private void OnAnimationCompleted()
     {
         slider.value = 1f;
-        onFinishLoading?.Invoke();
+        GameManager.Instance.LoadSceneManager.ContinueLoading();
     }
     private void StopAnimation()
     {
