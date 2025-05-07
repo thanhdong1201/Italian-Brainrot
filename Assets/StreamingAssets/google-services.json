@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "357106749936",
+    "firebase_url": "https://italian-brainrot-iq-mystery-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "italian-brainrot-iq-mystery",
+    "storage_bucket": "italian-brainrot-iq-mystery.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357106749936:android:9a10fc21f5d918730e4d35",
+        "android_client_info": {
+          "package_name": "com.BanhmiStudio.ItalianBrainrotIQMystery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxN59_rVAohUStfiDnjnL0-XFtvPFUhFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
