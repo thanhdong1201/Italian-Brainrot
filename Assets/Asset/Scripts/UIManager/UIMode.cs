@@ -1,13 +1,14 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIMode : MonoBehaviour
 {
     [SerializeField] private MainMenuManager mainMenuManager;
+    [SerializeField] private ListQuizzSO listQuizzSO;
     [Header("Buttons")]
-    [SerializeField] private Button quizzBtn;
+    [SerializeField] private Button easyQuizzBtn;
+    [SerializeField] private Button mediumQuizzBtn;
+    [SerializeField] private Button hardQuizzBtn;
     [SerializeField] private Button quitBtn;
     [Header("SpecialPanels")]
     [SerializeField] private GameObject loadingPanel;
@@ -23,12 +24,15 @@ public class UIMode : MonoBehaviour
     }
     private void InitializeButtons()
     {
-        quizzBtn.onClick.AddListener(() => LoadScene());
+        easyQuizzBtn.onClick.AddListener(() => LoadScene(DifficultyLevel.Easy));
+        mediumQuizzBtn.onClick.AddListener(() => LoadScene(DifficultyLevel.Medium));
+        hardQuizzBtn.onClick.AddListener(() => LoadScene(DifficultyLevel.Hard));
         quitBtn.onClick.AddListener(() => Quit());
     }
 
-    public void LoadScene()
+    public void LoadScene(DifficultyLevel difficultyLevel)
     {
+        listQuizzSO.SetQuizz(difficultyLevel);
         loadingPanel.SetActive(true);
         GameManager.Instance.LoadSceneManager.PrepareToLoadScene(3f);
     }
