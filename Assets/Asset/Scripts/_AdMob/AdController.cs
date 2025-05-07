@@ -1,22 +1,35 @@
-﻿using UnityEngine;
+﻿using GoogleMobileAds.Api;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AdController : MonoBehaviour
 {
-    [Header("Events")]
+    [Header("Listening from Events")]
     [SerializeField] private VoidEventChannelSO showInterstitial;
     [SerializeField] private VoidEventChannelSO showRewarded;
+    [Header("Broadscasting to Events")]
+    [SerializeField] private VoidEventChannelSO onChangeWallpaper;
+
     private void OnEnable()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         showInterstitial.OnEventRaised += ShowInterstitialAd;
         showRewarded.OnEventRaised += ShowRewardedAd;
+        onChangeWallpaper.OnEventRaised += ShowRewardedAdForChangeWallpaper;
     }
     private void OnDestroy()
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
         showInterstitial.OnEventRaised -= ShowInterstitialAd;
         showRewarded.OnEventRaised -= ShowRewardedAd;
+        onChangeWallpaper.OnEventRaised -= ShowRewardedAdForChangeWallpaper;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        AdManager.Instance.ShowBanner();
     }
     [Button]
-    public void ShowInterstitialAd()
+    private void ShowInterstitialAd()
     {
         if (AdManager.Instance.ShowInterstitial())
         {
@@ -25,12 +38,22 @@ public class AdController : MonoBehaviour
         }
     }
     [Button]
-    public void ShowRewardedAd()
+    private void ShowRewardedAd()
     {
         AdManager.Instance.ShowRewardedAd(() =>
         {
             //AnalyticsManager.Instance.LogAdImpression("rewarded");
             Debug.Log("Rewarded ad shown.");
+        });
+    }
+    [Button]
+    private void ShowRewardedAdForChangeWallpaper()
+    {
+        AdManager.Instance.ShowRewardedAd(() =>
+        {
+            //AnalyticsManager.Instance.LogAdImpression("rewarded");
+            WallpaperManager.Instance.ChangeWallpaper();
+            Debug.Log("Wallpaper changed");
         });
     }
 }

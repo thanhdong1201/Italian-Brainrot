@@ -39,7 +39,7 @@ public class AdManager : MonoBehaviour
     private void Start()
     {
         InitializeAdMob();
-        StartCoroutine(WaitAndShowBanner());
+        ShowBanner();
     }
 
     private void InitializeAdMob()
@@ -105,10 +105,7 @@ public class AdManager : MonoBehaviour
     {
         yield return new WaitUntil(() => IsAdMobInitialized);
         //yield return new WaitForSeconds(5f);
-        ShowBanner();
-    }
-    public void ShowBanner()
-    {
+
         if (bannerView != null)
         {
             bannerView.Show();
@@ -120,7 +117,10 @@ public class AdManager : MonoBehaviour
             LoadBannerAd();
         }
     }
-
+    public void ShowBanner()
+    {
+        StartCoroutine(WaitAndShowBanner());
+    }
     public void HideBanner()
     {
         bannerView?.Hide();

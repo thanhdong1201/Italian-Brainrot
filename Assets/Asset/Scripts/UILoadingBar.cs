@@ -1,6 +1,5 @@
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class UILoadingBar : MonoBehaviour
@@ -14,6 +13,10 @@ public class UILoadingBar : MonoBehaviour
     private void OnEnable()
     {
         PlayAnimation();
+    }
+    private void OnDestroy()
+    {
+        StopAnimation();
     }
     public void SetLoadingDuration(float duration)
     {
@@ -42,10 +45,5 @@ public class UILoadingBar : MonoBehaviour
             tween.Kill(true);
             tween = null;
         }
-    }
-    private void OnDestroy()
-    {
-        StopAnimation();
-
     }
 }

@@ -63,3 +63,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showInterstitial: {fileID: 11400000, guid: 209c9c49eead00349889855ca251c946, type: 2}
   showRewarded: {fileID: 11400000, guid: 975f5c40bedec594c9dbbd3fd6f6fafe, type: 2}
+  onChangeWallpaper: {fileID: 11400000, guid: f575673cb9ea15a42bd7441687aa9a41, type: 2}
