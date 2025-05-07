@@ -2237,6 +2237,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1096224213}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.76862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9984488
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer (2)
@@ -2377,7 +2385,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591900798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -3229,6 +3237,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773084211}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7705661
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.76862746
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer (1)
@@ -5407,6 +5423,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1096224213}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9457259
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7688679
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer
@@ -5509,6 +5537,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773084211}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.76862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.81720245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer (3)
@@ -6107,8 +6147,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294946560
-  m_fontColor: {r: 0, g: 0.6845894, b: 1, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6930,6 +6970,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1096224213}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7705661
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.76862746
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer (1)
@@ -7133,6 +7181,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1096224213}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.76862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.81720245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer (3)
@@ -8449,7 +8509,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868467246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -8792,6 +8852,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773084211}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.76862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9984488
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer (2)
@@ -9564,6 +9632,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773084211}
     m_Modifications:
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9457259
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244620997101899559, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7688679
+      objectReference: {fileID: 0}
     - target: {fileID: 1402217181327598959, guid: 593aeed0d60e35440a99ffb072a5d14b, type: 3}
       propertyPath: m_Name
       value: Btn_Answer
