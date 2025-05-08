@@ -31,20 +31,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        if(AdManager.Instance != null)
-        {
-            AdManager.Instance.WaitForInitialization(() =>
-            {
-                AdManager.Instance.ShowBanner();
-            });
-        }
-        if (AnalyticsManager.Instance != null)
-        {
-            AnalyticsManager.Instance.WaitForInitialization(() =>
-            {
-                AnalyticsManager.Instance.LogGameStart();
-            });
-        }
+
     }
     private void OnEnable()
     {
@@ -73,12 +60,10 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SoundManager.Instance.StopMusic();
+
         if (AdManager.Instance != null)
         {
-            AdManager.Instance.WaitForInitialization(() =>
-            {
-                AdManager.Instance.ShowBanner();
-            });
+            AdManager.Instance.WaitForInitialization(() => AdManager.Instance.ShowBanner());
         }
     }
     public void StartGame()
@@ -89,6 +74,11 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Admob & Firebase Analytics
+    [Button]
+    private void ShowBannerAd()
+    {
+        AdManager.Instance.ShowBanner();
+    }
     [Button]
     private void ShowInterstitialAd()
     {

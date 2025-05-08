@@ -6,32 +6,29 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Quizz", menuName = "ScriptableObjects/QuizzSO")]
 public class QuizzSO : ScriptableObject
 {
-    public List<Quizz> Quizzes = new List<Quizz>();
+    public List<Quizz> Quizzes = new();
 
-    [SerializeField] private int totalQuizzPerGame = 10;
-    public int TotalQuizzPerGame => totalQuizzPerGame;
-    private int totalCorrectAnswers = 0;
-    public int TotalCorrectAnswers => totalCorrectAnswers;
-    public int QuizzCount { get; private set; } = 0;
-    private bool isGameCompleted = false;
-    public bool IsGameCompleted() => isGameCompleted;
+    [SerializeField] private int quizzesPerGame = 10;
+    public int QuizzesPerGame => quizzesPerGame;
+
+    public int TotalCorrectAnswers { get; private set; }
+    public int CompletedQuizzCount { get; private set; }
+    public bool IsGameCompleted => CompletedQuizzCount >= quizzesPerGame;
 
     public void OnCorrectAnswer()
     {
-        if (isGameCompleted) return;
-
-        totalCorrectAnswers++;
+        if (!IsGameCompleted) TotalCorrectAnswers++;
     }
+
     public void OnQuizzCompleted()
     {
-        if (isGameCompleted) return;
+        if (!IsGameCompleted) CompletedQuizzCount++;
+    }
 
-        QuizzCount++;
-
-        if (QuizzCount >= totalQuizzPerGame)
-        {
-            isGameCompleted = true;
-        }
+    public void Reset()
+    {
+        TotalCorrectAnswers = 0;
+        CompletedQuizzCount = 0;
     }
 }
 

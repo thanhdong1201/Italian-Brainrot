@@ -20,6 +20,7 @@ public class AdManager : MonoBehaviour
     private BannerView bannerView;
     private InterstitialAd interstitialAd;
     private RewardedAd rewardedAd;
+    private bool isBannerLoaded = false;
     private float lastInterstitialTime;
     public bool IsAdMobInitialized { get; private set; } = false;
 
@@ -39,6 +40,10 @@ public class AdManager : MonoBehaviour
     private void Start()
     {
         InitializeAdMob();
+        //WaitForInitialization(() =>
+        //{
+        //    ShowBanner();
+        //});
     }
 
     private void InitializeAdMob()
@@ -62,10 +67,14 @@ public class AdManager : MonoBehaviour
         MobileAds.Initialize(initStatus =>
         {
             IsAdMobInitialized = true;
+            Debug.Log("[AdManager] AdMob Initialized at time: " + Time.time);
+        });
+
+        WaitForInitialization(() =>
+        {
             LoadBannerAd();
             LoadInterstitialAd();
             LoadRewardedAd();
-            Debug.Log("[AdManager] AdMob Initialized at time: " + Time.time);
         });
     }
     public void WaitForInitialization(Action action)
@@ -80,46 +89,51 @@ public class AdManager : MonoBehaviour
     #region Banner Ads
     public void LoadBannerAd()
     {
-        Debug.Log("[AdManager] Loading Banner Ad...");
-        if (bannerView != null)
+        if (bannerView != null && isBannerLoaded)
         {
-            bannerView.Destroy();
+            return; // Không reload nếu đã load
         }
 
-        int width = (int)(Screen.width / Screen.dpi);
-        bannerView = new BannerView(bannerAdUnitId, AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(width), AdPosition.Bottom);
-        //bannerView = new BannerView(bannerAdUnitId, AdSize.Banner, AdPosition.Bottom);
+        bannerView?.Destroy();
+        bannerView = null;
+
+        //int width = (int)(Screen.width / Screen.dpi);
+        //AdSize adSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(width);
+        //bannerView = new BannerView(bannerAdUnitId, adSize, AdPosition.Bottom);
+        bannerView = new BannerView(bannerAdUnitId, AdSize.Banner, AdPosition.Bottom);
 
         AdRequest request = new AdRequest();
-        request.Extras.Add("npa", "1"); // Yêu cầu quảng cáo không cá nhân hóa
+        request.Extras.Add("npa", "1");
 
         bannerView.LoadAd(request);
-        bannerView.Hide();
+        isBannerLoaded = false;
 
         bannerView.OnBannerAdLoaded += () =>
         {
+            isBannerLoaded = true;
             Debug.Log("[AdManager] Banner Ad Loaded Successfully at time: " + Time.time);
-            bannerView.Hide();
         };
 
         bannerView.OnBannerAdLoadFailed += (error) =>
         {
-            Debug.LogWarning($"[AdManager] Banner Ad Failed to load: {error} at time: {Time.time}");
+            isBannerLoaded = false;
+            Debug.LogWarning($"[AdManager] Banner Ad Failed to load: {error}");
             Invoke(nameof(LoadBannerAd), 10f);
         };
     }
-    public void ShowBanner()
+    [Button]
+    public bool ShowBanner()
     {
-        if (bannerView != null)
+        if (bannerView != null && isBannerLoaded)
         {
             bannerView.Show();
             Debug.Log("[AdManager] Banner Ad Shown");
+            return true;
         }
-        else
-        {
-            Debug.LogWarning("[AdManager] Banner Ad not ready, reloading");
-            LoadBannerAd();
-        }
+
+        Debug.LogWarning("[AdManager] Banner Ad not ready, reloading");
+        LoadBannerAd();
+        return false;
     }
     public void HideBanner()
     {

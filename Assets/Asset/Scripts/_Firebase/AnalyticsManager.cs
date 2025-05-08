@@ -34,6 +34,11 @@ public class AnalyticsManager : MonoBehaviour
     {
         InitializeFirebase();
         StartCoroutine(CheckNetworkAndSendPendingEvents());
+
+        WaitForInitialization(() =>
+        {
+            LogGameStart();
+        });
     }
 
     private void InitializeFirebase()

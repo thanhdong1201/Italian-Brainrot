@@ -19,7 +19,6 @@ public class SliderBar : MonoBehaviour
     }
     private void OnDisable()
     {
-        StopAnimation();
         onRestartCoutDown.OnEventRaised -= WaitToRestart;
     }
     private void OnDestroy()
@@ -50,7 +49,7 @@ public class SliderBar : MonoBehaviour
     }
     private void StopAnimation()
     {
-        if (tween != null)
+        if (tween != null && tween.IsActive())
         {
             tween.Kill(true);
             tween = null;

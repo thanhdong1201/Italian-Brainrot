@@ -86,7 +86,7 @@ public class UIGameComplete : MonoBehaviour
                 break;
         }
 
-        totalAnswerText.text = $"Correct Answers: {totalAnswer / maxQuizz}";
+        totalAnswerText.text = $"Correct Answers: {totalAnswer} / {maxQuizz}";
         totalAnswerText.gameObject.SetActive(true);
     }
 }

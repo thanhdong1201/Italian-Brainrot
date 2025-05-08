@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 3_HardQuizz
   m_EditorClassIdentifier: 
   Quizzes: []
-  totalQuizzPerGame: 2
+  quizzesPerGame: 0

@@ -63,6 +63,8 @@ public class QuizzManager : MonoBehaviour
             setupQuizz.Value.InitializeContent();
             setupQuizz.Value.gameObject.SetActive(false);
         }
+
+        quizzNumberText.text = $"Question {1}/{quizzSOInstance.QuizzesPerGame}";
     }
     private void ShowQuizzUI(QuizzType quizzType)
     {
@@ -75,7 +77,7 @@ public class QuizzManager : MonoBehaviour
                 setupQuizz.Value.SetupNewQuizz(SelectedQuizz);
             }
         }
-        quizzNumberText.text = $"Question {1}/{quizzSOInstance.TotalQuizzPerGame}";
+
     }
     private void ResetQuizz()
     {
@@ -86,7 +88,7 @@ public class QuizzManager : MonoBehaviour
     }
     public void ActiveNewQuizz()
     {
-        if (quizzSOInstance.IsGameCompleted())
+        if (quizzSOInstance.IsGameCompleted)
         {
             CompleteQuizzes(); 
             return;
@@ -105,7 +107,7 @@ public class QuizzManager : MonoBehaviour
         ShowQuizzUI(SelectedQuizz.Type);
 
         quizzNumber++;
-        quizzNumberText.text = $"Question {quizzNumber}/{quizzSOInstance.TotalQuizzPerGame}";
+        quizzNumberText.text = $"Question {quizzNumber}/{quizzSOInstance.QuizzesPerGame}";
     }
     public void GetRandomQuizzAnswer()
     {
@@ -131,13 +133,14 @@ public class QuizzManager : MonoBehaviour
         if (selectedQuizzButton.QuizzAnswer == SelectedQuizz.GetCorrectAnswer())
         {
             CorrectQuizz();
+            selectedQuizzButton.ShowAnswer(selectedQuizzButton.QuizzAnswer.Answer);
         }
         else
         {
             FailQuizz();
+            selectedQuizzButton.ShowAnswer(selectedQuizzButton.QuizzAnswer.Answer);
         }
 
-        selectedQuizzButton.ShowAnswer(selectedQuizzButton.QuizzAnswer.Answer);
         quizzSOInstance.OnQuizzCompleted();
     }
 
@@ -178,7 +181,7 @@ public class QuizzManager : MonoBehaviour
     public StarRating CalculateStarRating()
     {
         int correctAnswers = quizzSOInstance.TotalCorrectAnswers;
-        int maxQuizz = quizzSOInstance.TotalQuizzPerGame;
+        int maxQuizz = quizzSOInstance.QuizzesPerGame;
 
         float correctRatio = (float)correctAnswers / maxQuizz;
 
@@ -191,14 +194,8 @@ public class QuizzManager : MonoBehaviour
         else
             return StarRating.ZeroStars;
     }
-    public int GetTotalCorrectAnswers()
-    {
-        return quizzSOInstance.TotalCorrectAnswers;
-    }
-    public int GetMaxQuizz()
-    {
-        return quizzSOInstance.TotalQuizzPerGame;
-    }
+    public int GetTotalCorrectAnswers() => quizzSOInstance.TotalCorrectAnswers;
+    public int GetMaxQuizz() => quizzSOInstance.QuizzesPerGame;
 }
 public enum StarRating
 {

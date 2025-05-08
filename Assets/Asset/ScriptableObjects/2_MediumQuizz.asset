@@ -103,4 +103,4 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Tralalero Tralala
-  totalQuizzPerGame: 4
+  quizzesPerGame: 3
