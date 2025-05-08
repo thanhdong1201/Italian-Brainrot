@@ -131,7 +131,7 @@ public class AdManager : MonoBehaviour
             return true;
         }
 
-        Debug.LogWarning("[AdManager] Banner Ad not ready, reloading");
+        //Debug.LogWarning("[AdManager] Banner Ad not ready, reloading");
         LoadBannerAd();
         return false;
     }

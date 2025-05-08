@@ -24,7 +24,11 @@ public class QuizzSO : ScriptableObject
     {
         if (!IsGameCompleted) CompletedQuizzCount++;
     }
-
+    private void OnEnable()
+    {
+        TotalCorrectAnswers = 0;
+        CompletedQuizzCount = 0;
+    }
     public void Reset()
     {
         TotalCorrectAnswers = 0;

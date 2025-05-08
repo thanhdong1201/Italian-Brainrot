@@ -140,8 +140,6 @@ public class QuizzManager : MonoBehaviour
             FailQuizz();
             selectedQuizzButton.ShowAnswer(selectedQuizzButton.QuizzAnswer.Answer);
         }
-
-        quizzSOInstance.OnQuizzCompleted();
     }
 
     private void CorrectQuizz()
@@ -151,6 +149,7 @@ public class QuizzManager : MonoBehaviour
         SoundManager.Instance.PlayMusic(SelectedQuizz.CorrectAudioClip);
         quizzSOInstance.Quizzes.Remove(SelectedQuizz);
         quizzSOInstance.OnCorrectAnswer();
+        quizzSOInstance.OnQuizzCompleted();
 
         if (SelectedQuizz.Type == QuizzType.TextToImage)
         {
@@ -170,6 +169,7 @@ public class QuizzManager : MonoBehaviour
     }
     private void FailQuizz()
     {
+        quizzSOInstance.OnQuizzCompleted();
         setupQuizzBase.SetAnswerText(wrongs[Random.Range(0, wrongs.Count)]);
         SoundManager.Instance.PlayIncorrectSound();
         Invoke(nameof(ActiveNewQuizz), 3f);

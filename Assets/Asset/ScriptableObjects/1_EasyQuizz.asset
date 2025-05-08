@@ -247,4 +247,4 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
       Text: Frigo Camelo
-  totalQuizzPerGame: 3
+  quizzesPerGame: 10

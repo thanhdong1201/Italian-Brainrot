@@ -354,7 +354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 320, y: -32.5}
+  m_AnchoredPosition: {x: 301.81348, y: -32.5}
   m_SizeDelta: {x: 200, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &129512870
@@ -4661,7 +4661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &993394449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6249,7 +6249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 120, y: -32.5}
+  m_AnchoredPosition: {x: 101.81346, y: -32.5}
   m_SizeDelta: {x: 200, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1435395074
@@ -7641,14 +7641,14 @@ MonoBehaviour:
   - {fileID: 775940725}
   - {fileID: 1238893821}
   characterConversations:
-  - character: {fileID: 1852734581}
-    text: "Grr, so bad, I\u2019m super mad!"
   - character: {fileID: 397548311}
-    text: Hehe, funny, but still pretty bad, huh!
+    text: Chimpanzini Bananini is furious because you got too many answers wrong
+  - character: {fileID: 1852734581}
+    text: Glorbo Fruttodrillo is mocking you for getting only one star
   - character: {fileID: 834328388}
-    text: "Not bad, kiddo, but let\u2019s try a bit harder!"
+    text: Tung Tung Tung Sahur says he admires you a lot
   - character: {fileID: 611347489}
-    text: "Wow, you\u2019re a star, super duper awesome!"
+    text: Tralalero Tralala is very happy because you answered everything correctly
   congratulationText: {fileID: 1951773501}
   totalAnswerText: {fileID: 1546573636}
   characterConversationText: {fileID: 779979923}
@@ -7712,8 +7712,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1852734582}
   - {fileID: 397548312}
+  - {fileID: 1852734582}
   - {fileID: 834328389}
   - {fileID: 611347490}
   m_Father: {fileID: 2035427236}
@@ -8366,7 +8366,7 @@ GameObject:
   - component: {fileID: 1852734584}
   - component: {fileID: 1852734583}
   m_Layer: 5
-  m_Name: Lirili Lili Ralila
+  m_Name: Glorbo Fruttodrillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8388,7 +8388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 15}
+  m_AnchoredPosition: {x: -15, y: 15}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852734583
@@ -8445,7 +8445,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b7db52f19ad660441bddf04f5db6ed31, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0aee038bbfb8fe54fb115e1a458fb0c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
