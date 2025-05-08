@@ -31,6 +31,13 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        if(AdManager.Instance != null)
+        {
+            AdManager.Instance.WaitForInitialization(() =>
+            {
+                AdManager.Instance.ShowBanner();
+            });
+        }
         if (AnalyticsManager.Instance != null)
         {
             AnalyticsManager.Instance.WaitForInitialization(() =>
@@ -66,7 +73,13 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SoundManager.Instance.StopMusic();
-        AdManager.Instance.ShowBanner();
+        if (AdManager.Instance != null)
+        {
+            AdManager.Instance.WaitForInitialization(() =>
+            {
+                AdManager.Instance.ShowBanner();
+            });
+        }
     }
     public void StartGame()
     {

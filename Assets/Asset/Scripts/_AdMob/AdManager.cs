@@ -39,7 +39,6 @@ public class AdManager : MonoBehaviour
     private void Start()
     {
         InitializeAdMob();
-        ShowBanner();
     }
 
     private void InitializeAdMob()
@@ -69,7 +68,15 @@ public class AdManager : MonoBehaviour
             Debug.Log("[AdManager] AdMob Initialized at time: " + Time.time);
         });
     }
-
+    public void WaitForInitialization(Action action)
+    {
+        StartCoroutine(Delay(action));
+    }
+    private IEnumerator Delay(Action action)
+    {
+        yield return new WaitUntil(() => IsAdMobInitialized);
+        action?.Invoke();
+    }
     #region Banner Ads
     public void LoadBannerAd()
     {
@@ -101,11 +108,8 @@ public class AdManager : MonoBehaviour
             Invoke(nameof(LoadBannerAd), 10f);
         };
     }
-    private IEnumerator WaitAndShowBanner()
+    public void ShowBanner()
     {
-        yield return new WaitUntil(() => IsAdMobInitialized);
-        //yield return new WaitForSeconds(5f);
-
         if (bannerView != null)
         {
             bannerView.Show();
@@ -116,10 +120,6 @@ public class AdManager : MonoBehaviour
             Debug.LogWarning("[AdManager] Banner Ad not ready, reloading");
             LoadBannerAd();
         }
-    }
-    public void ShowBanner()
-    {
-        StartCoroutine(WaitAndShowBanner());
     }
     public void HideBanner()
     {
