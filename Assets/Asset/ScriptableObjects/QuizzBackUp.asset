@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee3c16316d9d3a641bbd8f41c0b92cb0, type: 3}
-  m_Name: 1_EasyQuizz
+  m_Name: QuizzBackUp
   m_EditorClassIdentifier: 
   Quizzes:
   - Question: Who is Br Br Patapim?
