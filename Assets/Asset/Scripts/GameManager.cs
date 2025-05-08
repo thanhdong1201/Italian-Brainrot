@@ -72,7 +72,6 @@ public class GameManager : MonoBehaviour
         onStartGame?.RaiseEvent(); 
     }
     #endregion
-
     #region Admob & Firebase Analytics
     [Button]
     private void ShowBannerAd()

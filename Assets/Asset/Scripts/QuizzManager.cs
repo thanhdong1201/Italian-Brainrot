@@ -25,6 +25,7 @@ public class QuizzManager : MonoBehaviour
     [Header("Broadcasting Events")]
     [SerializeField] private VoidEventChannelSO onStartGame;
     [SerializeField] private VoidEventChannelSO onRestartCoutDown;
+    [SerializeField] private VoidEventChannelSO onRetry, onIgnoreRety;
 
     private Dictionary<QuizzType, SetupQuizzBase> setupQuizzBasesDictionary = new Dictionary<QuizzType, SetupQuizzBase>();
     private QuizzSO quizzSOInstance;
@@ -38,11 +39,15 @@ public class QuizzManager : MonoBehaviour
     {
         onCountDownCompleted.OnEventRaised += CheckQuizz;
         onStartGame.OnEventRaised += ActiveNewQuizz;
+        onRetry.OnEventRaised += OnRetry;
+        onIgnoreRety.OnEventRaised += OnIgnoreRetry;
     }
     private void OnDisable()
     {
         onCountDownCompleted.OnEventRaised -= CheckQuizz;
         onStartGame.OnEventRaised -= ActiveNewQuizz;
+        onRetry.OnEventRaised -= OnRetry;
+        onIgnoreRety.OnEventRaised -= OnIgnoreRetry;
     }
     private void Awake()
     {
@@ -172,11 +177,23 @@ public class QuizzManager : MonoBehaviour
         quizzSOInstance.OnQuizzCompleted();
         setupQuizzBase.SetAnswerText(wrongs[Random.Range(0, wrongs.Count)]);
         SoundManager.Instance.PlayIncorrectSound();
-        Invoke(nameof(ActiveNewQuizz), 3f);
+        Invoke(nameof(ShowRetryUI), 2f);
+    }
+    private void ShowRetryUI()
+    {
+        UIManager.Instance.ShowPanel(UIPanel.Retry);
     }
     private void CompleteQuizzes()
     {
         UIManager.Instance.ShowPanel(UIPanel.Complete);
+    }
+    private void OnRetry()
+    {
+        Invoke(nameof(ActiveNewQuizz), 1f);
+    }
+    private void OnIgnoreRetry()
+    {
+        CompleteQuizzes();
     }
     public StarRating CalculateStarRating()
     {

@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject completePanel;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject retryPanel;
 
     [Header("SpecialPanels")]
     [SerializeField] private GameObject loadingPanel;
@@ -47,6 +48,7 @@ public class UIManager : MonoBehaviour
             { UIPanel.Pause, pausePanel },
             { UIPanel.Complete, completePanel },
             { UIPanel.GameOver, gameOverPanel },
+            { UIPanel.Retry, retryPanel },
         };
     }
     public void ShowPanel(UIPanel panel)
@@ -77,5 +79,6 @@ public enum UIPanel
     Gameplay,
     Pause,
     Complete,
-    GameOver
+    GameOver,
+    Retry,
 }
