@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6708374457464894296}
-  - component: {fileID: 6511739883285346415}
   - component: {fileID: 5624377085613589186}
   - component: {fileID: 6262814717340992127}
+  - component: {fileID: 4011763347702445978}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -34,18 +34,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6511739883285346415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3626730716748164164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5841a1689cde6344ba5b127af0962b81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5624377085613589186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,4 +59,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadSceneManager: {fileID: 5624377085613589186}
+  showInterstitial: {fileID: 11400000, guid: 209c9c49eead00349889855ca251c946, type: 2}
+  showRewarded: {fileID: 11400000, guid: 975f5c40bedec594c9dbbd3fd6f6fafe, type: 2}
   onStartGame: {fileID: 11400000, guid: b26c067845ab4564197881748cbe6e52, type: 2}
+  onChangeWallpaper: {fileID: 11400000, guid: f575673cb9ea15a42bd7441687aa9a41, type: 2}
+--- !u!114 &4011763347702445978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626730716748164164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b4b77992512d94e92dfd8e4af03f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -75,6 +75,7 @@ public class QuizzManager : MonoBehaviour
                 setupQuizz.Value.SetupNewQuizz(SelectedQuizz);
             }
         }
+        quizzNumberText.text = $"Question {1}/{quizzSOInstance.TotalQuizzPerGame}";
     }
     private void ResetQuizz()
     {
@@ -87,7 +88,6 @@ public class QuizzManager : MonoBehaviour
     {
         if (quizzSOInstance.IsGameCompleted())
         {
-
             CompleteQuizzes(); 
             return;
         }

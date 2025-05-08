@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 822147639972527102}
   - component: {fileID: 8101118002621087394}
-  - component: {fileID: 1167101134155274943}
   m_Layer: 0
   m_Name: AdsManager
   m_TagString: Untagged
@@ -49,18 +48,3 @@ MonoBehaviour:
   interstitialAdUnitId: ca-app-pub-3940256099942544/1033173712
   rewardedAdUnitId: ca-app-pub-3940256099942544/5224354917
   interstitialCooldown: 10
---- !u!114 &1167101134155274943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272864376555559627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e3543dd388568b468a1504d00c6046e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showInterstitial: {fileID: 11400000, guid: 209c9c49eead00349889855ca251c946, type: 2}
-  showRewarded: {fileID: 11400000, guid: 975f5c40bedec594c9dbbd3fd6f6fafe, type: 2}
-  onChangeWallpaper: {fileID: 11400000, guid: f575673cb9ea15a42bd7441687aa9a41, type: 2}

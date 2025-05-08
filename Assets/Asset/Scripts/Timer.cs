@@ -1,58 +1,31 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public Action<float> OnTimeChanged;
-    public Action OnTimeUp;
-
-    private float remainingTime;
-    private const float INITIAL_TIME = 15f; // Thời gian đếm ngược ban đầu  
-    private bool isCountingDown = false;
+    private float elapsedTime;
+    private float lastUpdateTime;
+    private const float UPDATE_INTERVAL = 1f; // Cập nhật mỗi giây
 
     private void Start()
     {
-        StartCountdown();
+        elapsedTime = 0f;
+        lastUpdateTime = Time.realtimeSinceStartup;
     }
-    private void Update()
+
+    public void UpdateTimer()
     {
-        if (isCountingDown)
+        float currentTime = Time.realtimeSinceStartup;
+        if (currentTime - lastUpdateTime >= UPDATE_INTERVAL)
         {
-            remainingTime -= Time.deltaTime;
-            remainingTime = Mathf.Max(remainingTime, 0f); // Không để thời gian âm  
-
-            OnTimeChanged?.Invoke(remainingTime);
-
-            if (remainingTime <= 0f)
-            {
-                isCountingDown = false;
-                OnTimeUp?.Invoke();
-            }
+            elapsedTime += currentTime - lastUpdateTime;
+            lastUpdateTime = currentTime;
         }
-    }
-
-    public void StartCountdown()
-    {
-        remainingTime = INITIAL_TIME;
-        isCountingDown = true;
-    }
-
-    public void ResetTimer()
-    {
-        remainingTime = INITIAL_TIME;
-        isCountingDown = false;
-        OnTimeChanged?.Invoke(remainingTime);
     }
 
     public string GetTime()
     {
-        int minutes = (int)(remainingTime / 60f);
-        int seconds = (int)(remainingTime % 60f);
+        int minutes = (int)(elapsedTime / 60f);
+        int seconds = (int)(elapsedTime % 60f);
         return $"{minutes:00}:{seconds:00}";
-    }
-
-    public bool IsTimeUp()
-    {
-        return remainingTime <= 0f;
     }
 }

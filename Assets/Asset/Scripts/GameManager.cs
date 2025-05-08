@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,9 +8,13 @@ public class GameManager : MonoBehaviour
     public LoadSceneManager LoadSceneManager;
     public Timer Timer { get; private set; }
 
-    [Header("Broadcasting Events")]
-    [SerializeField] private VoidEventChannelSO onStartGame;    
-    
+    [Header("Listening from Events")]
+    [SerializeField] private VoidEventChannelSO showInterstitial;
+    [SerializeField] private VoidEventChannelSO showRewarded;
+    [Header("Broadscasting to Events")]
+    [SerializeField] private VoidEventChannelSO onStartGame;
+    [SerializeField] private VoidEventChannelSO onChangeWallpaper;
+
     private void Awake()
     {
         if (Instance == null)
@@ -24,10 +29,78 @@ public class GameManager : MonoBehaviour
 
         Timer = GetComponent<Timer>();
     }
-
+    private void Start()
+    {
+        if (AnalyticsManager.Instance != null)
+        {
+            AnalyticsManager.Instance.WaitForInitialization(() =>
+            {
+                AnalyticsManager.Instance.LogGameStart();
+            });
+        }
+    }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        showInterstitial.OnEventRaised += ShowInterstitialAd;
+        showRewarded.OnEventRaised += ShowRewardedAd;
+        onChangeWallpaper.OnEventRaised += ShowRewardedAdForChangeWallpaper;
+    }
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        showInterstitial.OnEventRaised -= ShowInterstitialAd;
+        showRewarded.OnEventRaised -= ShowRewardedAd;
+        onChangeWallpaper.OnEventRaised -= ShowRewardedAdForChangeWallpaper;
+    }
+    private void Update()
+    {
+        Timer.UpdateTimer();
+    }
+    private void OnApplicationQuit()
+    {
+        AnalyticsManager.Instance.LogSessionDuration(Timer.GetTime());
+    }
+    #region GameControl
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Time.timeScale = 1f;
+        SoundManager.Instance.StopMusic();
+        AdManager.Instance.ShowBanner();
+    }
     public void StartGame()
     {
         UIManager.Instance.ShowPanel(UIPanel.Gameplay);
-        onStartGame?.RaiseEvent();
+        onStartGame?.RaiseEvent(); 
     }
+    #endregion
+
+    #region Admob & Firebase Analytics
+    [Button]
+    private void ShowInterstitialAd()
+    {
+        if (AdManager.Instance.ShowInterstitial())
+        {
+            AnalyticsManager.Instance.LogAdImpression("interstitial");
+        }
+    }
+    [Button]
+    private void ShowRewardedAd()
+    {
+        AdManager.Instance.ShowRewardedAd(() =>
+        {
+            AnalyticsManager.Instance.LogAdImpression("rewarded");
+        });
+    }
+    [Button]
+    private void ShowRewardedAdForChangeWallpaper()
+    {
+        AdManager.Instance.ShowRewardedAd(() =>
+        {
+            AnalyticsManager.Instance.LogAdImpression("rewarded");
+            AnalyticsManager.Instance.LogRewardedAdCompleted("rewarded_change_wallpaper");
+            WallpaperManager.Instance.ChangeWallpaper();
+        });
+    }
+    #endregion
 }

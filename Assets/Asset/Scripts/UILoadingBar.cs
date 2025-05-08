@@ -14,6 +14,10 @@ public class UILoadingBar : MonoBehaviour
     {
         PlayAnimation();
     }
+    private void OnDisable()
+    {
+        StopAnimation();
+    }
     private void OnDestroy()
     {
         StopAnimation();
