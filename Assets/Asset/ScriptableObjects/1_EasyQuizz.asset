@@ -393,9 +393,9 @@ MonoBehaviour:
       Text: Tralalero Tralala
   - Question: Guess who?
     Type: 2
-    CorrectAudioClip: {fileID: 0}
+    CorrectAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
     QuestionSprite: {fileID: 21300000, guid: d06d997d4d675fd48b61ecf0f3a1ce13, type: 3}
-    QuestionAudioClip: {fileID: 0}
+    QuestionAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: 2a6d4990af7a47847bd32d283f888071, type: 3}
@@ -429,9 +429,9 @@ MonoBehaviour:
       Text: Pot Hotspot
   - Question: Guess who?
     Type: 2
-    CorrectAudioClip: {fileID: 0}
+    CorrectAudioClip: {fileID: 8300000, guid: b5759388eae6f8d41a64c5348cbb54ff, type: 3}
     QuestionSprite: {fileID: 21300000, guid: 1b6d58d8e5991cd46915aa6d3a5e6402, type: 3}
-    QuestionAudioClip: {fileID: 0}
+    QuestionAudioClip: {fileID: 8300000, guid: b5759388eae6f8d41a64c5348cbb54ff, type: 3}
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: 2a64ac7e3c572cd49bbf2449fb3489fb, type: 3}
@@ -578,7 +578,7 @@ MonoBehaviour:
     QuestionAudioClip: {fileID: 8300000, guid: 5046f0091ce5b264b801f55412128142, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 0}
+      Sprite: {fileID: 21300000, guid: 4b3258270ed2db041a150c818414dd01, type: 3}
       Text: Cocofanto Elefanto
     - Answer: 0
       Sprite: {fileID: 0}
@@ -596,7 +596,7 @@ MonoBehaviour:
     QuestionAudioClip: {fileID: 8300000, guid: f949c3816a6d4dd46953ebabcd2dde86, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 0}
+      Sprite: {fileID: 21300000, guid: b1ecb43f39719d948b398e6a3cae1683, type: 3}
       Text: U Din Din Din Din Dun Ma Din Din Din Dun
     - Answer: 0
       Sprite: {fileID: 0}
@@ -895,8 +895,8 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 6598c40670e6aa64fa0d00c77c4e8d31, type: 3}
       Text: 
-  - Question: Who is not wearing sandals?
-    Type: 2
+  - Question: Who is this cool guy?
+    Type: 0
     CorrectAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
     QuestionSprite: {fileID: 21300000, guid: 2a6d4990af7a47847bd32d283f888071, type: 3}
     QuestionAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
@@ -905,7 +905,7 @@ MonoBehaviour:
       Sprite: {fileID: 21300000, guid: 2a6d4990af7a47847bd32d283f888071, type: 3}
       Text: Bulbito Bandito Traktorito
     - Answer: 0
-      Sprite: {fileID: 0}
+      Sprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
       Text: Tung tung tung Sahur
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
