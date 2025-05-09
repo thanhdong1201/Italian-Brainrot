@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-English (en)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-English (en)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5ce296b11ddfc804fac219bfb9484880
+  m_SerializeEntries:
+  - m_GUID: 1e843fcb999686d498b04c6c13df8fd8
+    m_Address: Menu Labels_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_CurrentHash:
+      bytes[0]: 97
+      bytes[1]: 158
+      bytes[2]: 75
+      bytes[3]: 179
+      bytes[4]: 67
+      bytes[5]: 149
+      bytes[6]: 136
+      bytes[7]: 91
+      bytes[8]: 60
+      bytes[9]: 68
+      bytes[10]: 150
+      bytes[11]: 175
+      bytes[12]: 165
+      bytes[13]: 138
+      bytes[14]: 182
+      bytes[15]: 214
+    m_cachedAssetPath: Assets/Localization/Locales/Menu Labels_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 41d4cedf6a6955341b9ce4e24022d363, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1756ad993e3c48a4697832bd6a4be792, type: 2}
+    - {fileID: 11400000, guid: fdc9553d9b463984abd0c0212340ddce, type: 2}
+  m_FolderEntryCache: []
+  m_AssetCollectionEntryCache: []
+  <FlaggedDuringContentUpdateRestriction>k__BackingField: 0
+  m_CurrentHash:
+    bytes[0]: 237
+    bytes[1]: 122
+    bytes[2]: 101
+    bytes[3]: 218
+    bytes[4]: 211
+    bytes[5]: 123
+    bytes[6]: 65
+    bytes[7]: 209
+    bytes[8]: 5
+    bytes[9]: 22
+    bytes[10]: 75
+    bytes[11]: 148
+    bytes[12]: 183
+    bytes[13]: 252
+    bytes[14]: 154
+    bytes[15]: 97

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 178b8d119a9004b4fa2a58270c57813d
+  m_SerializeEntries:
+  - m_GUID: b5e37db91da8f6c42b099f79d22508f3
+    m_Address: Assets/Localization/Locales/Menu Labels Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_CurrentHash:
+      bytes[0]: 15
+      bytes[1]: 0
+      bytes[2]: 130
+      bytes[3]: 55
+      bytes[4]: 14
+      bytes[5]: 38
+      bytes[6]: 229
+      bytes[7]: 31
+      bytes[8]: 9
+      bytes[9]: 227
+      bytes[10]: 125
+      bytes[11]: 93
+      bytes[12]: 61
+      bytes[13]: 171
+      bytes[14]: 36
+      bytes[15]: 114
+    m_cachedAssetPath: Assets/Localization/Locales/Menu Labels Shared Data.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 41d4cedf6a6955341b9ce4e24022d363, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 91efe7bf3a48ef34cb069d4c4cfefc08, type: 2}
+    - {fileID: 11400000, guid: 1df3a1841a70c83419c765c9a54718fa, type: 2}
+  m_FolderEntryCache: []
+  m_AssetCollectionEntryCache: []
+  <FlaggedDuringContentUpdateRestriction>k__BackingField: 0
+  m_CurrentHash:
+    bytes[0]: 63
+    bytes[1]: 6
+    bytes[2]: 196
+    bytes[3]: 190
+    bytes[4]: 98
+    bytes[5]: 123
+    bytes[6]: 249
+    bytes[7]: 4
+    bytes[8]: 227
+    bytes[9]: 172
+    bytes[10]: 118
+    bytes[11]: 3
+    bytes[12]: 82
+    bytes[13]: 246
+    bytes[14]: 52
+    bytes[15]: 203

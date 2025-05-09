@@ -1,15 +1,12 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public abstract class SetupQuizzBase : MonoBehaviour
 {
     public abstract QuizzType Type { get; }
     [Header("UI")]
     [SerializeField] protected Transform contentHolder;
-    //[SerializeField] protected Button continueBtn;
-    //[SerializeField] protected Image finalAnswerImage;
     [SerializeField] protected TextMeshProUGUI questionText;
     [SerializeField] protected TextMeshProUGUI answerText;
 
@@ -27,18 +24,12 @@ public abstract class SetupQuizzBase : MonoBehaviour
             quizzButton.AddSetupQuizzBase(this);
         }
 
-        //continueBtn.onClick.AddListener(() =>
-        //{
-        //    quizzManager.ActiveNewQuizz();
-        //    continueBtn.interactable = false;
-        //});
     }
     public virtual void SetupNewQuizz(Quizz selectedQuizz)
     {
         SelectedQuizzButton = null;
         SelectedQuizz = null;
         answerText.text = "";
-        //continueBtn.interactable = true;
 
         questionText.text = selectedQuizz.Question;
         SelectedQuizz = quizzManager.SelectedQuizz;
@@ -55,11 +46,6 @@ public abstract class SetupQuizzBase : MonoBehaviour
             }
         }
     }
-    //public void SetFinalAnswerImage(Sprite sprite)
-    //{
-    //    continueBtn.gameObject.SetActive(true);
-    //    finalAnswerImage.sprite = sprite;
-    //}
     public void SetAnswerText(string text)
     {
         answerText.text = text;

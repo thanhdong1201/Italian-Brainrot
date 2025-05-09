@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ea9c424ab1cfd4f84f343eda2068d5, type: 3}
+  m_Name: LocalizationData
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: play
+    Value:
+      en: Let's play
+      vi: "C\xF9ng ch\u01A1i n\xE0o"
+  - Key: settings
+    Value:
+      en: Settings
+      vi: "C\xE0i \u0111\u1EB7t"
+  - Key: characters
+    Value:
+      en: Characters
+      vi: "Nh\xE2n v\u1EADt"
+  - Key: quit
+    Value:
+      en: Quit
+      vi: "Tho\xE1t"
+  - Key: privacyPolicy
+    Value:
+      en: Privacy policy
+      vi: "Ch\xEDnh s\xE1ch quy\u1EC1n ri\xEAng t\u01B0"
+  - Key: contactSupport
+    Value:
+      en: Contact support
+      vi: "Li\xEAn h\u1EC7 h\u1ED7 tr\u1EE3"
+  - Key: back
+    Value:
+      en: Back
+      vi: "Quay l\u1EA1i"
+  - Key: changeWallpaper
+    Value:
+      en: Change wallpaper
+      vi: "Thay \u0111\u1ED5i h\xECnh n\u1EC1n"
+  - Key: audio
+    Value:
+      en: Audio
+      vi: "\xC2m thanh"
+  - Key: language
+    Value:
+      en: Language
+      vi: "Ng\xF4n ng\u1EEF"
+  - Key: chooseMode
+    Value:
+      en: Choose mode
+      vi: "Ch\u1ECDn ch\u1EBF \u0111\u1ED9"
+  - Key: easy
+    Value:
+      en: Easy
+      vi: "D\u1EC5"
+  - Key: medium
+    Value:
+      en: Medium
+      vi: "Trung b\xECnh"
+  - Key: loading
+    Value:
+      en: Loading
+      vi: "\u0110ang t\u1EA3i"
