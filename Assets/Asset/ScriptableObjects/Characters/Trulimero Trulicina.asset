@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: eb40e11c59160db4187bf79bc623ad02, type: 3}
   audioClip: {fileID: 8300000, guid: a1285b28c7543774bbfffee1d4dba9f3, type: 3}
+  IsUnlocked: 1

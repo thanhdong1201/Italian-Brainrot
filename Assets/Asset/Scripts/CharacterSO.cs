@@ -10,4 +10,5 @@ public class CharacterSO : ScriptableObject
     public string CharacterName => name;
     public Sprite Sprite => sprite;
     public AudioClip Audio => audioClip;
+    public bool IsUnlocked = false;
 }

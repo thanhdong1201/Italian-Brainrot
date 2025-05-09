@@ -54,7 +54,10 @@ public class SoundManager : MonoBehaviour
             StartCoroutine(FadeOutAndStop());
         }
     }
-
+    public void StopMusicNow()
+    {
+        musicSource.Stop();
+    }
     private IEnumerator FadeOutAndStop()
     {
         float startVolume = musicSource.volume;

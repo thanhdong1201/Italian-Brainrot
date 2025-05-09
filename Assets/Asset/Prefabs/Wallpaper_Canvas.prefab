@@ -279,7 +279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3336309299628674793
 RectTransform:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 129, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 576.37305, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5019925058426207456
 CanvasRenderer:
@@ -446,7 +446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallPaperHolder: {fileID: 4407872729132238967}
-  onChangeWallpaper: {fileID: 11400000, guid: f575673cb9ea15a42bd7441687aa9a41, type: 2}
 --- !u!1 &3661089836040807474
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6432039101423980785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1003,7 +1002,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 112, y: 0}
-  m_SizeDelta: {x: 576.37305, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6180994282368475426
 CanvasRenderer:
