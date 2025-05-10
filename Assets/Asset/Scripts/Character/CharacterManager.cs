@@ -11,6 +11,7 @@ public class CharacterManager : MonoBehaviour
 
     [SerializeField] private MainMenuManager mainMenuManager;
     [SerializeField] private UISelectedCharacter uiSelectedCharacter;
+    [SerializeField] private UIAskToWatchAds uiAskToWatchAds;
     [SerializeField] private Button backBtn;
 
     private void Awake()
@@ -36,5 +37,17 @@ public class CharacterManager : MonoBehaviour
     {
         uiSelectedCharacter.gameObject.SetActive(true);
         uiSelectedCharacter.SetSelectedCharacter(characterSO);
+    }
+    public void SetUnlockCharacter(CharacterSO characterSO)
+    {
+        uiAskToWatchAds.SetCharacter(characterSO);
+        uiAskToWatchAds.gameObject.SetActive(true);
+    }
+    public void UpdateUICharacters()
+    {
+        foreach (var uiCharacter in uiCharacters)
+        {
+            uiCharacter.UpdateCharacter();
+        }
     }
 }

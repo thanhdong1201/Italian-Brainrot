@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,14 +27,16 @@ public class UICharacter : MonoBehaviour
     {
         btn.onClick.RemoveListener(() => OnCharacterSelected());
     }
+    //Only call once from game start
     public void SetCharacterData(CharacterSO character, CharacterManager characterManager)
     {
         this.characterManager = characterManager;
         CharacterSO = character;
+        CharacterSO.LoadUnlockStatus();
         characterImage.sprite = CharacterSO.Sprite;
         UpdateCharacter();
     }
-    private void UpdateCharacter()
+    public void UpdateCharacter()
     {
         if(CharacterSO == null) return;
         lockImage.gameObject.SetActive(!CharacterSO.IsUnlocked);
@@ -48,7 +49,7 @@ public class UICharacter : MonoBehaviour
         }
         else
         {
-
+            characterManager.SetUnlockCharacter(CharacterSO);
         }
     }
 }
