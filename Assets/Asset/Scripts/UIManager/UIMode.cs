@@ -8,7 +8,6 @@ public class UIMode : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private Button easyQuizzBtn;
     [SerializeField] private Button mediumQuizzBtn;
-    [SerializeField] private Button hardQuizzBtn;
     [SerializeField] private Button quitBtn;
     [Header("SpecialPanels")]
     [SerializeField] private GameObject loadingPanel;
@@ -26,7 +25,6 @@ public class UIMode : MonoBehaviour
     {
         easyQuizzBtn.onClick.AddListener(() => LoadScene(DifficultyLevel.Easy));
         mediumQuizzBtn.onClick.AddListener(() => LoadScene(DifficultyLevel.Medium));
-        hardQuizzBtn.onClick.AddListener(() => LoadScene(DifficultyLevel.Hard));
         quitBtn.onClick.AddListener(() => Quit());
     }
 

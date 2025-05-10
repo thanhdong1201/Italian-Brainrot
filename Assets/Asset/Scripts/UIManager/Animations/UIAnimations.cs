@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using DG.Tweening;
 
-public class UIAnimation : MonoBehaviour
+public class UIAnimations : MonoBehaviour
 {
     public enum RotationAxis { X, Y, Z }
     public enum BounceDirection { FromLeft, FromRight, FromTop, FromBottom }
