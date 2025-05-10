@@ -73,12 +73,10 @@ public class GameManager : MonoBehaviour
     }
     #endregion
     #region Admob & Firebase Analytics
-    [Button]
     private void ShowBannerAd()
     {
         AdManager.Instance.ShowBanner();
     }
-    [Button]
     private void ShowInterstitialAd()
     {
         if (AdManager.Instance.ShowInterstitial())
@@ -86,7 +84,6 @@ public class GameManager : MonoBehaviour
             AnalyticsManager.Instance.LogAdImpression("interstitial");
         }
     }
-    [Button]
     private void ShowRewardedAd()
     {
         AdManager.Instance.ShowRewardedAd(() =>
@@ -94,7 +91,6 @@ public class GameManager : MonoBehaviour
             AnalyticsManager.Instance.LogAdImpression("rewarded");
         });
     }
-    [Button]
     private void ShowRewardedAdForChangeWallpaper()
     {
         AdManager.Instance.ShowRewardedAd(() =>
@@ -104,5 +100,15 @@ public class GameManager : MonoBehaviour
             WallpaperManager.Instance.ChangeWallpaper();
         });
     }
+    #endregion
+
+    #region Editor
+#if UNITY_EDITOR
+    [Button]
+    private void ResetSaveGame()
+    {
+        SaveManager.ResetAll();
+    }
+#endif
     #endregion
 }

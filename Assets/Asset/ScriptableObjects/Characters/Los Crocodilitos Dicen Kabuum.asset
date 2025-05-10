@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e804c92bb36515042973181dcdb263fd, type: 3}
   m_Name: Los Crocodilitos Dicen Kabuum
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 041e738e39b577d4ebb221815250b5bc, type: 3}
   audioClip: {fileID: 8300000, guid: edda8e93732fc534280f4618a96c0e13, type: 3}
   IsUnlocked: 0

@@ -16,12 +16,11 @@ public class CharacterSO : ScriptableObject
     public void Unlock()
     {
         IsUnlocked = true;
-        PlayerPrefs.SetInt(UnlockKeyPrefix + name, 1);
-        PlayerPrefs.Save();
+        SaveManager.SaveBool(UnlockKeyPrefix + name, true);
     }
 
     public void LoadUnlockStatus()
     {
-        IsUnlocked = PlayerPrefs.GetInt(UnlockKeyPrefix + name, 0) == 1;
+        IsUnlocked = SaveManager.LoadBool(UnlockKeyPrefix + name, false);
     }
 }

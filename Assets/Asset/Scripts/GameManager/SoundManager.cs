@@ -22,14 +22,14 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        float savedVolume = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        float savedVolume = SaveManager.LoadFloat("MasterVolume", 1f);
         SetVolume(savedVolume);
     }
     public void SetVolume(float value)
     {
         musicSource.volume = value;
         soundfxSource.volume = value;
-        PlayerPrefs.SetFloat("MasterVolume", value);
+        SaveManager.SaveFloat("MasterVolume", value);
     }
     public void PlayMusic(AudioClip clip)
     {

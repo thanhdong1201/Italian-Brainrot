@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e804c92bb36515042973181dcdb263fd, type: 3}
   m_Name: Los Tralaleritas Dicen Tralali
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: bf1e4ef464484bc42b0d06176efa6359, type: 3}
   audioClip: {fileID: 8300000, guid: 856cee95dc1890046bd336ad45b94bc0, type: 3}
-  IsUnlocked: 0
+  IsUnlocked: 1
