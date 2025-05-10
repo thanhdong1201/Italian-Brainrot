@@ -19,10 +19,12 @@ public class WallpaperManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        int savedIndex = SaveManager.LoadInt("WallpaperIndex", 0);
         wallpapers = new List<GameObject>();
         for (int i = 0; i < wallPaperHolder.childCount; i++)
         {
             wallpapers.Add(wallPaperHolder.GetChild(i).gameObject);
+            wallpapers[i].SetActive(i == savedIndex);
         }
     }
     [Button]
@@ -33,5 +35,6 @@ public class WallpaperManager : MonoBehaviour
         {
             wallpapers[i].SetActive(i == randomIndex);
         }
+        SaveManager.SaveInt("WallpaperIndex", randomIndex);
     }
 }
