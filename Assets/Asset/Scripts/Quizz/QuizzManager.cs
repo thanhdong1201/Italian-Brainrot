@@ -17,7 +17,7 @@ public class QuizzManager : MonoBehaviour
     [SerializeField] private SetupQuizz_SoundToText setupQuizz_SoundToText;
 
     [Header("Image Quizz")]
-    [SerializeField] private ListQuizzSO listQuizzSO;
+    [SerializeField] private QuizzSO quizzSO;
 
     [Header("Listening to Events")]
     [SerializeField] private VoidEventChannelSO onCountDownCompleted;
@@ -51,7 +51,7 @@ public class QuizzManager : MonoBehaviour
     }
     private void Awake()
     {
-        quizzSOInstance = Instantiate(listQuizzSO.GetQuizzData());
+        quizzSOInstance = Instantiate(quizzSO);
         continueBtn.onClick.AddListener(() => ActiveNewQuizz());
 
         InitializeQuizzUI();

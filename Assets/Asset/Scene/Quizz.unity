@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillImage: {fileID: 359288406}
-  duration: 5
+  duration: 10
   easeType: 1
   onCountDownCompleted: {fileID: 11400000, guid: 775855a49f772074c83a85d1da24bd1d, type: 2}
   onRestartCoutDown: {fileID: 11400000, guid: 79e951a5e38c80241a017119aecf5158, type: 2}
@@ -5649,7 +5649,6 @@ GameObject:
   m_Component:
   - component: {fileID: 993394449}
   - component: {fileID: 993394451}
-  - component: {fileID: 993394450}
   - component: {fileID: 993394453}
   - component: {fileID: 993394452}
   m_Layer: 5
@@ -5685,36 +5684,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &993394450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993394448}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.3537736, g: 0.8073992, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 5
 --- !u!222 &993394451
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5752,7 +5721,7 @@ MonoBehaviour:
   setupQuizz_TextToImage: {fileID: 1964883296}
   setupQuizz_ImageToText: {fileID: 1691509114}
   setupQuizz_SoundToText: {fileID: 1876259438}
-  listQuizzSO: {fileID: 11400000, guid: db5a06be05aadd5489f02e719f1cbc23, type: 2}
+  quizzSO: {fileID: 11400000, guid: d647728c62d4f10429facea119ce2dd7, type: 2}
   onCountDownCompleted: {fileID: 11400000, guid: 775855a49f772074c83a85d1da24bd1d, type: 2}
   onStartGame: {fileID: 11400000, guid: b26c067845ab4564197881748cbe6e52, type: 2}
   onRestartCoutDown: {fileID: 11400000, guid: 79e951a5e38c80241a017119aecf5158, type: 2}
@@ -8674,6 +8643,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2333740680991449313, guid: 7a10e59dcf5a16b4a9249a63eca6d8e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3195932766092293202, guid: 7a10e59dcf5a16b4a9249a63eca6d8e1, type: 3}
       propertyPath: m_Name
       value: Wallpaper_Canvas
@@ -8703,6 +8676,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6432039101423980785, guid: 7a10e59dcf5a16b4a9249a63eca6d8e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483569428711613371, guid: 7a10e59dcf5a16b4a9249a63eca6d8e1, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
@@ -9119,8 +9096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
-  duration: 0.75
-  easeOpen: 27
+  duration: 0.5
+  easeOpen: 18
   easeClose: 26
   closeAfterOpen: 0
 --- !u!114 &1666946708
@@ -9235,8 +9212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
-  duration: 1.5
-  easeOpen: 30
+  duration: 1
+  easeOpen: 18
   easeClose: 26
   closeAfterOpen: 0
 --- !u!114 &1671645743
@@ -11061,14 +11038,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dac32e59cf98d7a44b1b75a512598283, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e160569c604301143a03f329297bd8c5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
