@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 4
   bounceDirection: 0
@@ -629,7 +629,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: -50, y: 50}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &173569086
 MonoBehaviour:
@@ -1202,7 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.5
   delay: 0.5
   bounceDirection: 0
@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 3
   bounceDirection: 2
@@ -1585,11 +1585,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &294623179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1906,11 +1907,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &397548314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1923,7 +1925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 3
   bounceDirection: 2
@@ -2449,7 +2451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
+  m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &556153674
@@ -2485,12 +2487,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    m_SelectedColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2863,11 +2865,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &611347492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3241,7 +3244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 4
   bounceDirection: 0
@@ -3395,11 +3398,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 1
   duration: 0.5
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &693249545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3733,8 +3737,8 @@ RectTransform:
   - {fileID: 1666946710}
   - {fileID: 1225893135}
   - {fileID: 1671645741}
-  - {fileID: 1967548255}
   - {fileID: 219727748}
+  - {fileID: 1967548255}
   - {fileID: 223150469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4112,11 +4116,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 1.5
   duration: 0.5
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &775940728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4205,7 +4210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 3
   bounceDirection: 3
@@ -4492,11 +4497,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &834328391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6355,11 +6361,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &1200051277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6372,7 +6379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 3
   bounceDirection: 2
@@ -6758,11 +6765,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 2
   duration: 0.5
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &1238893824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7332,7 +7340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.5
   delay: 0.5
   bounceDirection: 0
@@ -7484,11 +7492,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &1380552980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7820,11 +7829,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &1443804707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8194,7 +8204,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -50, y: 50}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1508097892
 MonoBehaviour:
@@ -9097,11 +9107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 0.5
   duration: 1
   easeOpen: 18
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &1666946708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9121,7 +9132,7 @@ MonoBehaviour:
   - {fileID: 1238893821}
   characterConversations:
   - character: {fileID: 397548311}
-    text: Chimpanzini Bananini is furious because you got too many answers wrong
+    text: Lew Lew Lew! You only got 0 stars!
   - character: {fileID: 1852734581}
     text: Glorbo Fruttodrillo is mocking you for getting only one star
   - character: {fileID: 834328388}
@@ -9132,7 +9143,6 @@ MonoBehaviour:
   totalAnswerText: {fileID: 1546573636}
   characterConversationText: {fileID: 779979923}
   relayBtn: {fileID: 2147032167}
-  nextLevelBtn: {fileID: 0}
   menuBtn: {fileID: 636593220}
 --- !u!222 &1666946709
 CanvasRenderer:
@@ -9213,11 +9223,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 0.5
   duration: 1
   easeOpen: 18
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &1671645743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10126,7 +10137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 3
   bounceDirection: 2
@@ -10143,11 +10154,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fcd8647d83d094091f623c3e9eab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 0
   delay: 3
   duration: 0.75
   easeOpen: 27
   easeClose: 26
-  closeAfterOpen: 0
 --- !u!114 &1852734585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10469,7 +10481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1964883295
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10727,7 +10739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 3
   bounceDirection: 3
@@ -10882,7 +10894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 4.5
   bounceDirection: 1
@@ -11220,7 +11232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.5
   delay: 0.3
   bounceDirection: 0
@@ -11374,7 +11386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15d05ddc452ec443acb64e4329028a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnAwake: 1
+  playOnEnable: 1
   duration: 0.75
   delay: 4.5
   bounceDirection: 1
@@ -11650,7 +11662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
+  m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &6831277024510801350
