@@ -19,10 +19,10 @@ public class UIAskToWatchAds : MonoBehaviour
     {
         AdManager.Instance.ShowRewardedAd(() =>
         {
+            UnlockCharacter();
+            uIScaleAnimation.PlayCloseAnimation();
             AnalyticsManager.Instance.LogAdImpression("rewarded");
             AnalyticsManager.Instance.LogRewardedAdCompleted("rewarded_unlock_character");
-            uIScaleAnimation.PlayCloseAnimation();
-            UnlockCharacter();
         });
     }
     private void UnlockCharacter()

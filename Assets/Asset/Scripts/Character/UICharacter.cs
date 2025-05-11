@@ -43,13 +43,7 @@ public class UICharacter : MonoBehaviour
     }
     private void OnCharacterSelected()
     {
-        if (CharacterSO.IsUnlocked)
-        {
-            characterManager.SetSelectedCharacter(CharacterSO);
-        }
-        else
-        {
-            characterManager.SetUnlockCharacter(CharacterSO);
-        }
+        if (CharacterSO.IsUnlocked) characterManager.SetSelectedCharacter(CharacterSO);
+        if (!CharacterSO.IsUnlocked) characterManager.SetUnlockCharacter(CharacterSO);
     }
 }

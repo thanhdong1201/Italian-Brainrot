@@ -9096,7 +9096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
-  duration: 0.5
+  duration: 1
   easeOpen: 18
   easeClose: 26
   closeAfterOpen: 0
