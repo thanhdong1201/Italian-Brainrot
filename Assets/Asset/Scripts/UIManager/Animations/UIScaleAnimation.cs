@@ -1,13 +1,15 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class UIScaleAnimation : MonoBehaviour
+public class UIScaleAnimation : MonoBehaviour, IUIAnimation
 {
+    [SerializeField] private bool playOnEnable = true;
+    [SerializeField] private bool closeAfterOpen = false;
+
     [SerializeField] private float delay = 0f;
     [SerializeField] private float duration = 0.6f;
     [SerializeField] private Ease easeOpen = Ease.OutBack;
     [SerializeField] private Ease easeClose = Ease.InBack;
-    [SerializeField] private bool closeAfterOpen = false;
 
     private RectTransform rectTransform;
     private Tween tween;
@@ -19,7 +21,7 @@ public class UIScaleAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayOpenAnimation();
+        if (playOnEnable) PlayOpenAnimation();
     }
     private void OnDisable()
     {

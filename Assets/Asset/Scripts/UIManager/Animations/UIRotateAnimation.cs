@@ -69,7 +69,7 @@ public class UIRotateAnimation : MonoBehaviour
             .SetUpdate(UpdateType.Normal, true)
             .OnComplete(() => gameObject.SetActive(false));
     }
-    public void StopAnimation()
+    private void StopAnimation()
     {
         if (tween != null)
         {

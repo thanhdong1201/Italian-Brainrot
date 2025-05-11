@@ -1,9 +1,10 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class UISlideAnimation : MonoBehaviour
+public class UISlideAnimation : MonoBehaviour, IUIAnimation
 {
-    [SerializeField] private bool playOnAwake = true;
+    [SerializeField] private bool playOnEnable = true;
+    [SerializeField] private bool closeAfterOpen = false;
     [Header("General")]
     [SerializeField] private float delay = 0f;
     [SerializeField] private float duration = 0.6f;
@@ -25,7 +26,7 @@ public class UISlideAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        if(playOnAwake) PlayOpenAnimation();
+        if(playOnEnable) PlayOpenAnimation();
     }
 
     private void OnDisable()
@@ -41,11 +42,12 @@ public class UISlideAnimation : MonoBehaviour
     public void PlayOpenAnimation()
     {
         rectTransform.anchoredPosition = originalPosition + slideOffset;
-        tween = rectTransform.DOAnchorPos(originalPosition, duration).SetEase(easeOpen).SetDelay(delay).SetUpdate(UpdateType.Normal, true);
+        tween = rectTransform.DOAnchorPos(originalPosition, duration).SetEase(easeOpen).SetDelay(delay).SetUpdate(UpdateType.Normal, true).OnComplete(() => PlayCloseAnimation());
     }
 
     public void PlayCloseAnimation()
     {
+        if (!closeAfterOpen) return;
         tween = rectTransform.DOAnchorPos(originalPosition + slideOffset, duration).SetEase(easeClose).SetDelay(delay).SetUpdate(UpdateType.Normal, true).OnComplete(() => gameObject.SetActive(false));
     }
 

@@ -7,20 +7,20 @@ public class UIAskToWatchAds : MonoBehaviour
     [SerializeField] private Button ignoreBtn;
     [SerializeField] private CharacterManager characterManager;
     private CharacterSO characterSO;
-    private  UIScaleAnimation uIScaleAnimation;
+    private  IUIAnimation iUIAnimation;
 
     private void Awake()
     {
-        uIScaleAnimation = GetComponent<UIScaleAnimation>();
+        iUIAnimation = GetComponent<IUIAnimation>();
         watchAdsBtn.onClick.AddListener(() => WatchAds());
-        ignoreBtn.onClick.AddListener(() => uIScaleAnimation.PlayCloseAnimation());
+        ignoreBtn.onClick.AddListener(() => iUIAnimation.PlayCloseAnimation());
     }
     private void WatchAds()
     {
         AdManager.Instance.ShowRewardedAd(() =>
         {
             UnlockCharacter();
-            uIScaleAnimation.PlayCloseAnimation();
+            iUIAnimation.PlayCloseAnimation();
             AnalyticsManager.Instance.LogAdImpression("rewarded");
             AnalyticsManager.Instance.LogRewardedAdCompleted("rewarded_unlock_character");
         });

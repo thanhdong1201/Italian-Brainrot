@@ -1,8 +1,10 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class UIFadeAnimation : MonoBehaviour
+public class UIFadeAnimation : MonoBehaviour, IUIAnimation
 {
+    [SerializeField] private bool playOnEnable = true;
+    [SerializeField] private bool closeAfterOpen = false;
     [Header("FadeOut")]
     [SerializeField] private float delayFadeOut = 0f;
     [SerializeField] private float durationFadeOut = 0.6f;
@@ -27,7 +29,7 @@ public class UIFadeAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayFadeOutAnimation();
+        if (playOnEnable) PlayOpenAnimation();
     }
     private void OnDisable()
     {
@@ -37,19 +39,25 @@ public class UIFadeAnimation : MonoBehaviour
     {
         StopAnimation();
     }
-    public void PlayFadeOutAnimation()
+    public void PlayOpenAnimation()
     {
+        //PlayFadeOutAnimation
         canvasGroup.alpha = 0;
-        tween = canvasGroup.DOFade(1, durationFadeOut).SetEase(easeFadeOut).SetDelay(delayFadeOut).SetUpdate(UpdateType.Normal, true).OnComplete(() => PlayFadeInAnimation());
+        tween = canvasGroup.DOFade(1, durationFadeOut).SetEase(easeFadeOut).SetDelay(delayFadeOut).SetUpdate(UpdateType.Normal, true).OnComplete(() => PlayCloseAnimation());
     }
-    public void PlayFadeInAnimation()
+    public void PlayCloseAnimation()
     {
+        //PlayFadeInAnimation
+        if (!closeAfterOpen) return;
         canvasGroup.alpha = 1;
         tween = canvasGroup.DOFade(0, durationFadeIn).SetEase(easeFadeIn).SetDelay(delayFadeIn).SetUpdate(UpdateType.Normal, true).OnComplete(() => gameObject.SetActive(false));
     }
     private void StopAnimation()
     {
-        tween?.Kill();
-        tween = null;
+        if (tween != null)
+        {
+            tween.Kill();
+            tween = null;
+        }
     }
 }

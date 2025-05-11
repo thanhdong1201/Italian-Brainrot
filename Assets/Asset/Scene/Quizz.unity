@@ -841,6 +841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a884529b7f8ecfe488ba399f7790f4d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playOnEnable: 1
+  closeAfterOpen: 1
   delayFadeOut: 0
   durationFadeOut: 0
   easeFadeOut: 2

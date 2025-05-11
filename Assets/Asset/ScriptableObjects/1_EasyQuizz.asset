@@ -615,7 +615,7 @@ MonoBehaviour:
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
-      Text: Svinino Bombondino_Audioclip
+      Text: Svinino Bombondino
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Burbaloni Lulilolli
@@ -840,7 +840,7 @@ MonoBehaviour:
       Text: Tric Trac Baraboom
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: Bombardiro_Crocodilo
+      Text: Bombardiro Crocodilo
   - Question: Who is this?
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}

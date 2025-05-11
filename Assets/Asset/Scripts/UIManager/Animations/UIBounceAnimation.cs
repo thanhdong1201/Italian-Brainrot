@@ -1,11 +1,11 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-public class UIBounceAnimation : MonoBehaviour
+public class UIBounceAnimation : MonoBehaviour, IUIAnimation
 {
-    public enum BounceDirection { FromLeft, FromRight, FromTop, FromBottom }
+    [SerializeField] private bool playOnEnable = true;
+    [SerializeField] private enum BounceDirection { FromLeft, FromRight, FromTop, FromBottom }
 
-    [SerializeField] private bool playOnAwake = true;
     [Header("General")]
     [SerializeField] private float duration = 0.6f;
     [SerializeField] private float delay = 0f;
@@ -25,7 +25,7 @@ public class UIBounceAnimation : MonoBehaviour
     }
     private void OnEnable()
     {
-        if(playOnAwake) PlayAnimation();
+        if(playOnEnable) PlayOpenAnimation();
     }
     private void OnDisable()
     {
@@ -35,7 +35,7 @@ public class UIBounceAnimation : MonoBehaviour
     {
         StopAnimation();
     }
-    public void PlayAnimation()
+    public void PlayOpenAnimation()
     {
         StopAnimation();
         Vector2 startPos = originalPos;
@@ -60,7 +60,7 @@ public class UIBounceAnimation : MonoBehaviour
             .SetDelay(delay)
             .SetUpdate(UpdateType.Normal, true);
     }
-    public void PlayHideAnimatiom()
+    public void PlayCloseAnimation()
     {
         StopAnimation();
         tween = rectTransform.DOScale(Vector3.zero, duration / 3f)
@@ -69,7 +69,7 @@ public class UIBounceAnimation : MonoBehaviour
             .SetUpdate(UpdateType.Normal, true)
             .OnComplete(() => gameObject.SetActive(false));
     }
-    public void StopAnimation()
+    private void StopAnimation()
     {
         if (tween != null)
         {

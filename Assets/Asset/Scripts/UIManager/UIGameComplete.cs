@@ -18,7 +18,6 @@ public class UIGameComplete : MonoBehaviour
 
     [Header("Buttons")]
     [SerializeField] private Button relayBtn;
-    [SerializeField] private Button nextLevelBtn;
     [SerializeField] private Button menuBtn;
 
     private void OnEnable()
