@@ -56,6 +56,10 @@ public class QuizzManager : MonoBehaviour
 
         InitializeQuizzUI();
     }
+    private void Start()
+    {
+        AnalyticsManager.Instance.LogLevelStart("level_quizz");
+    }
     private void InitializeQuizzUI()
     {
         setupQuizzBasesDictionary.Add(QuizzType.TextToImage, setupQuizz_TextToImage);
@@ -186,6 +190,7 @@ public class QuizzManager : MonoBehaviour
     private void CompleteQuizzes()
     {
         UIManager.Instance.ShowPanel(UIPanel.Complete);
+        AnalyticsManager.Instance.LogLevelComplete("level_quizz", CalculateStarRating().ToString());
     }
     private void OnRetry()
     {

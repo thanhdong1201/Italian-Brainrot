@@ -508,7 +508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 349.31348, y: -62.5}
+  m_AnchoredPosition: {x: 364.31348, y: -62.5}
   m_SizeDelta: {x: 175, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &129512870
@@ -3245,10 +3245,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playOnEnable: 1
-  duration: 0.75
+  duration: 0.5
   delay: 4
   bounceDirection: 0
-  easeBounce: 27
+  easeBounce: 18
 --- !u!114 &636593223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7085,7 +7085,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 175, y: 75}
-  m_Spacing: {x: 20, y: 20}
+  m_Spacing: {x: 50, y: 20}
   m_Constraint: 2
   m_ConstraintCount: 1
 --- !u!222 &1276852366
@@ -7767,7 +7767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 154.31346, y: -62.5}
+  m_AnchoredPosition: {x: 139.31346, y: -62.5}
   m_SizeDelta: {x: 175, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1435395074
@@ -9244,7 +9244,7 @@ MonoBehaviour:
   ignoreRetryBtn: {fileID: 422741706}
   retryWithAdsBtn: {fileID: 989030465}
   onRetry: {fileID: 11400000, guid: c2de40e134257fa4ba7de8cde545d822, type: 2}
-  onIgnoreRety: {fileID: 11400000, guid: 9fcfd99a161b4894ea67990a52ae45fe, type: 2}
+  onIgnoreRetry: {fileID: 11400000, guid: 9fcfd99a161b4894ea67990a52ae45fe, type: 2}
 --- !u!222 &1671645744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11387,10 +11387,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playOnEnable: 1
-  duration: 0.75
+  duration: 0.5
   delay: 4.5
   bounceDirection: 1
-  easeBounce: 27
+  easeBounce: 18
 --- !u!114 &2147032164
 MonoBehaviour:
   m_ObjectHideFlags: 0

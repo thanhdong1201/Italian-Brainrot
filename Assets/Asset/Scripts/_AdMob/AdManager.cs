@@ -40,10 +40,6 @@ public class AdManager : MonoBehaviour
     private void Start()
     {
         InitializeAdMob();
-        //WaitForInitialization(() =>
-        //{
-        //    ShowBanner();
-        //});
     }
 
     private void InitializeAdMob()
@@ -67,7 +63,7 @@ public class AdManager : MonoBehaviour
         MobileAds.Initialize(initStatus =>
         {
             IsAdMobInitialized = true;
-            Debug.Log("[AdManager] AdMob Initialized at time: " + Time.time);
+            Debug.Log("[AdManager] AdMob Initialized");
         });
 
         WaitForInitialization(() =>
@@ -96,10 +92,6 @@ public class AdManager : MonoBehaviour
 
         bannerView?.Destroy();
         bannerView = null;
-
-        //int width = (int)(Screen.width / Screen.dpi);
-        //AdSize adSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(width);
-        //bannerView = new BannerView(bannerAdUnitId, adSize, AdPosition.Bottom);
         bannerView = new BannerView(bannerAdUnitId, AdSize.Banner, AdPosition.Bottom);
 
         AdRequest request = new AdRequest();
@@ -111,7 +103,7 @@ public class AdManager : MonoBehaviour
         bannerView.OnBannerAdLoaded += () =>
         {
             isBannerLoaded = true;
-            Debug.Log("[AdManager] Banner Ad Loaded Successfully at time: " + Time.time);
+            Debug.Log("[AdManager] Banner Ad Loaded Successfully");
         };
 
         bannerView.OnBannerAdLoadFailed += (error) =>
@@ -131,7 +123,6 @@ public class AdManager : MonoBehaviour
             return true;
         }
 
-        //Debug.LogWarning("[AdManager] Banner Ad not ready, reloading");
         LoadBannerAd();
         return false;
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +7,9 @@ public class UIRetry : MonoBehaviour
     [SerializeField] private Button ignoreRetryBtn;
     [SerializeField] private Button retryWithAdsBtn;
 
-    [SerializeField] private VoidEventChannelSO onRetry, onIgnoreRety;
+    [Header("Events")]
+    [SerializeField] private VoidEventChannelSO onRetry;
+    [SerializeField] private VoidEventChannelSO onIgnoreRetry;
 
     private void Start()
     {
@@ -23,14 +23,14 @@ public class UIRetry : MonoBehaviour
     private void IgnoreRetry()
     {
         UIManager.Instance.ShowPanel(UIPanel.Gameplay);
-        onIgnoreRety.RaiseEvent();
+        onIgnoreRetry.RaiseEvent();
     }
     private void RetryWithAds()
     {
         AdManager.Instance.ShowRewardedAd(() =>
         {
             AnalyticsManager.Instance.LogAdImpression("rewarded");
-            AnalyticsManager.Instance.LogRewardedAdCompleted("rewarded_retry");
+            AnalyticsManager.Instance.LogRewardedAdCompleted("retry");
             UIManager.Instance.ShowPanel(UIPanel.Gameplay);
             onRetry.RaiseEvent();
         });

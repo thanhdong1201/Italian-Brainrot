@@ -22,7 +22,7 @@ public class UIAskToWatchAds : MonoBehaviour
             UnlockCharacter();
             iUIAnimation.PlayCloseAnimation();
             AnalyticsManager.Instance.LogAdImpression("rewarded");
-            AnalyticsManager.Instance.LogRewardedAdCompleted("rewarded_unlock_character");
+            AnalyticsManager.Instance.LogRewardedAdCompleted("unlock_character");
         });
     }
     private void UnlockCharacter()

@@ -52,7 +52,6 @@ public class UIGameComplete : MonoBehaviour
         StarRating starRating = quizzManager.CalculateStarRating();
         int totalAnswer = quizzManager.GetTotalCorrectAnswers();
         int maxQuizz = quizzManager.GetMaxQuizz();
-        Debug.Log($"Star Rating: {starRating}");
         PrepareSummaryData(starRating, totalAnswer, maxQuizz);
     }
     private void PrepareSummaryData(StarRating starRating, int totalAnswer, int maxQuizz)

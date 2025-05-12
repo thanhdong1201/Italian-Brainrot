@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +5,7 @@ public class SetupQuizz_SoundToText : SetupQuizzBase
 {
     public override QuizzType Type => QuizzType.SoundToText;
 
+    [Header("Others")]
     [SerializeField] private Button playSoundBtn;
 
     public override void InitializeContent()

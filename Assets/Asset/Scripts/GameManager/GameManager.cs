@@ -6,11 +6,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public LoadSceneManager LoadSceneManager;
-    public Timer Timer { get; private set; }
+    //public Timer Timer { get; private set; }
 
     [Header("Listening from Events")]
     [SerializeField] private VoidEventChannelSO showInterstitial;
-    [SerializeField] private VoidEventChannelSO showRewarded;
     [Header("Broadscasting to Events")]
     [SerializeField] private VoidEventChannelSO onStartGame;
     [SerializeField] private VoidEventChannelSO onChangeWallpaper;
@@ -27,7 +26,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        Timer = GetComponent<Timer>();
+        //Timer = GetComponent<Timer>();
     }
     private void Start()
     {
@@ -37,23 +36,17 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         showInterstitial.OnEventRaised += ShowInterstitialAd;
-        showRewarded.OnEventRaised += ShowRewardedAd;
         onChangeWallpaper.OnEventRaised += ShowRewardedAdForChangeWallpaper;
     }
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
         showInterstitial.OnEventRaised -= ShowInterstitialAd;
-        showRewarded.OnEventRaised -= ShowRewardedAd;
         onChangeWallpaper.OnEventRaised -= ShowRewardedAdForChangeWallpaper;
     }
     private void Update()
     {
-        Timer.UpdateTimer();
-    }
-    private void OnApplicationQuit()
-    {
-        AnalyticsManager.Instance.LogSessionDuration(Timer.GetTime());
+        //Timer.UpdateTimer();
     }
     #region GameControl
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -73,10 +66,6 @@ public class GameManager : MonoBehaviour
     }
     #endregion
     #region Admob & Firebase Analytics
-    private void ShowBannerAd()
-    {
-        AdManager.Instance.ShowBanner();
-    }
     private void ShowInterstitialAd()
     {
         if (AdManager.Instance.ShowInterstitial())
@@ -84,19 +73,12 @@ public class GameManager : MonoBehaviour
             AnalyticsManager.Instance.LogAdImpression("interstitial");
         }
     }
-    private void ShowRewardedAd()
-    {
-        AdManager.Instance.ShowRewardedAd(() =>
-        {
-            AnalyticsManager.Instance.LogAdImpression("rewarded");
-        });
-    }
     private void ShowRewardedAdForChangeWallpaper()
     {
         AdManager.Instance.ShowRewardedAd(() =>
         {
             AnalyticsManager.Instance.LogAdImpression("rewarded");
-            AnalyticsManager.Instance.LogRewardedAdCompleted("rewarded_change_wallpaper");
+            AnalyticsManager.Instance.LogRewardedAdCompleted("change_wallpaper");
             WallpaperManager.Instance.ChangeWallpaper();
         });
     }

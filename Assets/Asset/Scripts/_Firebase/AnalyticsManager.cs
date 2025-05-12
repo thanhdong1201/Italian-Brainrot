@@ -10,12 +10,10 @@ public class AnalyticsManager : MonoBehaviour
     public static AnalyticsManager Instance { get; private set; }
 
     private bool isInitialized;
-    private const string GAME_NAME = "Italian Brainrot: IQ Mystery";
-    private const int MAX_RETRY_ATTEMPTS = 3;
     private const float RETRY_DELAY = 5f;
 
     private List<Action> pendingEvents = new List<Action>();
-    private int retryCount;
+    private Coroutine checkNetworkCoroutine;
 
     private void Awake()
     {
@@ -33,19 +31,13 @@ public class AnalyticsManager : MonoBehaviour
     private void Start()
     {
         InitializeFirebase();
-        StartCoroutine(CheckNetworkAndSendPendingEvents());
-
-        WaitForInitialization(() =>
-        {
-            LogGameStart();
-        });
     }
 
     private void InitializeFirebase()
     {
         if (!IsNetworkAvailable())
         {
-            Debug.LogWarning("[GameAnalyticsManager] No internet, retrying initialization...");
+            Debug.LogWarning("[AnalyticsManager] No internet, retrying initialization...");
             ScheduleRetry();
             return;
         }
@@ -54,17 +46,9 @@ public class AnalyticsManager : MonoBehaviour
         {
             if (task.IsFaulted || task.Result != DependencyStatus.Available)
             {
-                Debug.LogError($"[GameAnalyticsManager] Firebase init failed: {task.Exception?.Message ?? task.Result.ToString()}");
-                if (retryCount < MAX_RETRY_ATTEMPTS)
-                {
-                    retryCount++;
-                    Debug.Log($"[GameAnalyticsManager] Retrying initialization (Attempt {retryCount}/{MAX_RETRY_ATTEMPTS})...");
-                    ScheduleRetry();
-                }
-                else
-                {
-                    Debug.LogError("[GameAnalyticsManager] Max retry attempts reached. Analytics unavailable.");
-                }
+                Debug.LogError($"[AnalyticsManager] Firebase init failed: {task.Exception?.Message ?? task.Result.ToString()}");
+                Debug.Log("[AnalyticsManager] Retrying initialization...");
+                ScheduleRetry();
                 return;
             }
 
@@ -73,22 +57,17 @@ public class AnalyticsManager : MonoBehaviour
                 FirebaseAnalytics.SetAnalyticsCollectionEnabled(true);
                 FirebaseAnalytics.SetSessionTimeoutDuration(new TimeSpan(0, 10, 0));
                 isInitialized = true;
-                retryCount = 0;
-                Debug.Log($"[GameAnalyticsManager] Firebase Analytics initialized");
+                Debug.Log("[AnalyticsManager] Firebase Analytics initialized");
+                if (pendingEvents.Count > 0 && checkNetworkCoroutine == null)
+                {
+                    checkNetworkCoroutine = StartCoroutine(CheckNetworkAndSendPendingEvents());
+                }
             }
             catch (Exception ex)
             {
-                Debug.LogError($"[GameAnalyticsManager] Firebase setup failed: {ex.Message}");
-                if (retryCount < MAX_RETRY_ATTEMPTS)
-                {
-                    retryCount++;
-                    Debug.Log($"[GameAnalyticsManager] Retrying initialization (Attempt {retryCount}/{MAX_RETRY_ATTEMPTS})...");
-                    ScheduleRetry();
-                }
-                else
-                {
-                    Debug.LogError("[GameAnalyticsManager] Max retry attempts reached. Analytics unavailable.");
-                }
+                Debug.LogError($"[AnalyticsManager] Firebase setup failed: {ex.Message}\n{ex.StackTrace}");
+                Debug.Log("[AnalyticsManager] Retrying initialization...");
+                ScheduleRetry();
             }
         });
     }
@@ -99,11 +78,11 @@ public class AnalyticsManager : MonoBehaviour
 
     private IEnumerator CheckNetworkAndSendPendingEvents()
     {
-        while (true)
+        while (pendingEvents.Count > 0)
         {
-            if (IsNetworkAvailable() && isInitialized && pendingEvents.Count > 0)
+            if (IsNetworkAvailable() && isInitialized)
             {
-                Debug.Log("[GameAnalyticsManager] Network restored, sending pending events...");
+                Debug.Log("[AnalyticsManager] Network restored, sending pending events...");
                 var eventsToSend = new List<Action>(pendingEvents);
                 pendingEvents.Clear();
                 foreach (var evt in eventsToSend)
@@ -113,34 +92,23 @@ public class AnalyticsManager : MonoBehaviour
             }
             yield return new WaitForSeconds(RETRY_DELAY);
         }
+        checkNetworkCoroutine = null;
     }
 
     private void LogEvent(string methodName, Action logAction)
     {
-        if (!isInitialized)
+        if (!isInitialized || !IsNetworkAvailable())
         {
             pendingEvents.Add(logAction);
-            Debug.LogWarning($"[GameAnalyticsManager] {methodName} queued: Firebase not initialized");
-            return;
-        }
-
-        if (!IsNetworkAvailable())
-        {
-            pendingEvents.Add(logAction);
-            Debug.Log($"[GameAnalyticsManager] {methodName} queued: No network");
+            if (checkNetworkCoroutine == null)
+            {
+                checkNetworkCoroutine = StartCoroutine(CheckNetworkAndSendPendingEvents());
+            }
+            Debug.Log($"[AnalyticsManager] {methodName} queued: Firebase not initialized or no network");
             return;
         }
 
         logAction?.Invoke();
-    }
-
-    public void LogGameStart()
-    {
-        LogEvent("LogGameStart", () =>
-        {
-            FirebaseAnalytics.LogEvent("game_start", new Parameter("game_name", GAME_NAME));
-            Debug.Log("[GameAnalyticsManager] Event logged: game_start");
-        });
     }
 
     public void LogLevelStart(string levelName)
@@ -148,19 +116,18 @@ public class AnalyticsManager : MonoBehaviour
         LogEvent("LogLevelStart", () =>
         {
             FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventLevelStart, new Parameter("level_name", levelName));
-            Debug.Log($"[GameAnalyticsManager] Event logged: level_start | Level: {levelName}");
+            Debug.Log($"[AnalyticsManager] Event logged: level_start | Level: {levelName}");
         });
     }
 
-    public void LogLevelComplete(string levelName, int starRating)
+    public void LogLevelComplete(string levelName, string starRating)
     {
         LogEvent("LogLevelComplete", () =>
         {
             FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventLevelEnd,
                 new Parameter("level_name", levelName),
-                new Parameter("star_rating", starRating),
-                new Parameter("success", 1));
-            Debug.Log($"[GameAnalyticsManager] Event logged: level_complete | Level: {levelName} | Star Rating: {starRating}");
+                new Parameter("star_rating", starRating));
+            Debug.Log($"[AnalyticsManager] Event logged: level_complete | Level: {levelName} | Star Rating: {starRating}");
         });
     }
 
@@ -169,7 +136,7 @@ public class AnalyticsManager : MonoBehaviour
         LogEvent("LogAdImpression", () =>
         {
             FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventAdImpression, new Parameter("ad_type", adType));
-            Debug.Log($"[GameAnalyticsManager] Event logged: ad_impression | Type: {adType}");
+            Debug.Log($"[AnalyticsManager] Event logged: ad_impression | Type: {adType}");
         });
     }
 
@@ -178,16 +145,7 @@ public class AnalyticsManager : MonoBehaviour
         LogEvent("LogRewardedAdCompleted", () =>
         {
             FirebaseAnalytics.LogEvent("rewarded_ad_completed", new Parameter("reward_type", rewardType));
-            Debug.Log($"[GameAnalyticsManager] Event logged: rewarded_ad_completed | Reward: {rewardType}");
-        });
-    }
-
-    public void LogSessionDuration(string seconds)
-    {
-        LogEvent("LogSessionDuration", () =>
-        {
-            FirebaseAnalytics.LogEvent("session_duration", new Parameter("duration_seconds", seconds));
-            Debug.Log($"[GameAnalyticsManager] Event logged: session_duration | {seconds}s");
+            Debug.Log($"[AnalyticsManager] Event logged: rewarded_ad_completed | Reward: {rewardType}");
         });
     }
 
