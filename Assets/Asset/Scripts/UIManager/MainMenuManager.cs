@@ -5,7 +5,6 @@ public class MainMenuManager : MonoBehaviour
 {
     [Header("Panels")]
     [SerializeField] private GameObject mainMenu;
-    [SerializeField] private GameObject chooseModePanel;
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject characterPanel;
 
@@ -21,7 +20,6 @@ public class MainMenuManager : MonoBehaviour
         uiPanels = new Dictionary<UIMenuPanel, GameObject>
         {
             { UIMenuPanel.Menu, mainMenu },
-            { UIMenuPanel.ChooseMode, chooseModePanel },
             { UIMenuPanel.Settings, settingsPanel },
             { UIMenuPanel.Character, characterPanel },
 
@@ -39,7 +37,6 @@ public class MainMenuManager : MonoBehaviour
 public enum UIMenuPanel
 {
     Menu,
-    ChooseMode,
     Settings,
     Character,
 }

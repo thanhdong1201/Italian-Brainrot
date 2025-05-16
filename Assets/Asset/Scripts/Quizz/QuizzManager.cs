@@ -58,7 +58,10 @@ public class QuizzManager : MonoBehaviour
     }
     private void Start()
     {
-        AnalyticsManager.Instance.LogLevelStart("level_quizz");
+        if (AnalyticsManager.Instance != null)
+        {
+            AnalyticsManager.Instance.WaitForInitialization(() => AnalyticsManager.Instance.LogLevelStart("level_quizz"));
+        }
     }
     private void InitializeQuizzUI()
     {
@@ -205,17 +208,21 @@ public class QuizzManager : MonoBehaviour
         int correctAnswers = quizzSOInstance.TotalCorrectAnswers;
         int maxQuizz = quizzSOInstance.QuizzesPerGame;
 
-        float correctRatio = (float)correctAnswers / maxQuizz;
+        if (maxQuizz <= 0)
+            return StarRating.ZeroStars;
 
-        if (correctRatio >= 0.99f) // >= 99%
+        float ratio = (float)correctAnswers / maxQuizz;
+
+        if (ratio >= 1f)        // 100%
             return StarRating.ThreeStars;
-        else if(correctRatio >= 0.7f) // 70% - 99%
+        else if (ratio >= 0.666f)  // >= 10/15
             return StarRating.TwoStars;
-        else if(correctRatio >= 0.5f) // 50% - 69%
+        else if (ratio >= 0.333f)  // >= 5/15
             return StarRating.OneStar;
         else
             return StarRating.ZeroStars;
     }
+
     public int GetTotalCorrectAnswers() => quizzSOInstance.TotalCorrectAnswers;
     public int GetMaxQuizz() => quizzSOInstance.QuizzesPerGame;
 }

@@ -8,7 +8,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject gameplayPanel;
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject completePanel;
-    [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject retryPanel;
 
     [Header("SpecialPanels")]
@@ -36,10 +35,6 @@ public class UIManager : MonoBehaviour
             Instance = null;
         }
     }
-    private void Start()
-    {
-
-    }
     private void InitializeUIPanels()
     {
         uiPanels = new Dictionary<UIPanel, GameObject>
@@ -47,7 +42,6 @@ public class UIManager : MonoBehaviour
             { UIPanel.Gameplay, gameplayPanel },
             { UIPanel.Pause, pausePanel },
             { UIPanel.Complete, completePanel },
-            { UIPanel.GameOver, gameOverPanel },
             { UIPanel.Retry, retryPanel },
         };
     }

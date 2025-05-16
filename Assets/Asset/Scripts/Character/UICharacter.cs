@@ -28,11 +28,11 @@ public class UICharacter : MonoBehaviour
         btn.onClick.RemoveListener(() => OnCharacterSelected());
     }
     //Only call once from game start
-    public void SetCharacterData(CharacterSO character, CharacterManager characterManager)
+    public void SetCharacterData(CharacterSO character, CharacterManager characterManager, bool forceToUnlock)
     {
         this.characterManager = characterManager;
         CharacterSO = character;
-        CharacterSO.LoadUnlockStatus();
+        CharacterSO.LoadUnlockStatus(forceToUnlock);
         characterImage.sprite = CharacterSO.Sprite;
         UpdateCharacter();
     }

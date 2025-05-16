@@ -19,8 +19,15 @@ public class CharacterSO : ScriptableObject
         SaveManager.SaveBool(UnlockKeyPrefix + name, true);
     }
 
-    public void LoadUnlockStatus()
+    public void LoadUnlockStatus(bool forceToUnlock)
     {
-        IsUnlocked = SaveManager.LoadBool(UnlockKeyPrefix + name, false);
+        if (forceToUnlock)
+        {
+            IsUnlocked = true;
+        }
+        if (!forceToUnlock)
+        {
+            IsUnlocked = SaveManager.LoadBool(UnlockKeyPrefix + name, false);
+        }
     }
 }
