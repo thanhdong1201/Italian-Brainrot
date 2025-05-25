@@ -24,13 +24,13 @@ MonoBehaviour:
       Text: Bombardiro Crocodilo
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Bombombini Gusini
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Frulli Frulla
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Los Crocodilitos Dicen Kabuum
   - Question: Whose skeleton is this
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: f3500f2aef04dfd43a9506badc590376, type: 3}
@@ -42,13 +42,13 @@ MonoBehaviour:
       Text: Tralalero Tralala
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Pussini Sushini
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Cacto Ippopotamo
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Blueberrinni Octopussini
   - Question: Whose skeleton is this
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 2c4c78404df9a1444bce4864dded04d6, type: 3}
@@ -60,13 +60,13 @@ MonoBehaviour:
       Text: Trippi Troppi
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Trulimero Trulicina
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Tric Trac Baraboom
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Matteo
   - Question: Whose skeleton is this
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: dcf0a681da408de48a55bca28619f50d, type: 3}
@@ -78,13 +78,13 @@ MonoBehaviour:
       Text: Glorbo Fruttodrillo
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Bananita Dolfinita
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Burbaloni Lulilolli
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Orangutini Ananasini
   - Question: Whose skeleton is this
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 3ff3f6bc93344a947b9527a25c2306fa, type: 3}
@@ -96,17 +96,17 @@ MonoBehaviour:
       Text: Girafa Celestre
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Tigrrullini Watermellini
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Pot Hotspot
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: GaramararamararAman & Madundungdudung tungtung perkuntung
   - Question: Whose skeleton is this
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 3011b715558b7194c86b7e4de47d8e55, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: c4300a5abb3ef8b47adf8983f1683b6d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 23e5ca97c0f1dac41b32a7ecb2f67d5a, type: 3}
     QuestionAudioClip: {fileID: 8300000, guid: 3011b715558b7194c86b7e4de47d8e55, type: 3}
     QuizzAnswers:
     - Answer: 1
@@ -114,13 +114,13 @@ MonoBehaviour:
       Text: Lirili Rili Ralila
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Brr Brr Patapim
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Burito Hotspotini
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Ecco Cavallo Virtuoso
   - Question: Whose skeleton is this
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 5b2f9336567ce4747948818d17169762, type: 3}
@@ -132,13 +132,13 @@ MonoBehaviour:
       Text: Burbaloni Lulilolli
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Cocofanto Elefanto
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Penguino Cocosino
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Spioniro Golubiro
   - Question: Whose skeleton is this
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
@@ -150,13 +150,13 @@ MonoBehaviour:
       Text: Tung tung tung Sahur
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Trippi Troppi
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: 
+      Text: Zibra Zubra Zibralini
   - Question: Who is this?
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
