@@ -5,7 +5,9 @@ public class UIMode : MonoBehaviour
 {
     [SerializeField] private MainMenuManager mainMenuManager;
     [Header("Buttons")]
-    [SerializeField] private Button easyQuizzBtn;
+    [SerializeField] private Button easyBtn;
+    [SerializeField] private Button mediumBtn;
+    [SerializeField] private Button hardBtn;
     [SerializeField] private Button quitBtn;
     [Header("SpecialPanels")]
     [SerializeField] private GameObject loadingPanel;
@@ -21,7 +23,7 @@ public class UIMode : MonoBehaviour
     }
     private void InitializeButtons()
     {
-        easyQuizzBtn.onClick.AddListener(() => LoadScene());
+        easyBtn.onClick.AddListener(() => LoadScene());
         quitBtn.onClick.AddListener(() => Quit());
     }
 
