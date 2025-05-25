@@ -175,4 +175,94 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: 
-  quizzesPerGame: 10
+  - Question: Who has the biggest feet?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 0c47073feb399e64d9a3da31b1bbb155, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: b1ecb43f39719d948b398e6a3cae1683, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: caf3f6948f4573249a89b871b7592fea, type: 3}
+      Text: 
+  - Question: Wow Wow Wow! Who is this???
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 8c812880799b6644b8f872377ff1cd10, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 8c812880799b6644b8f872377ff1cd10, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
+      Text: Rhino Toasterino
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tric Trac Baraboom
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tigrrullini Watermellini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
+  - Question: Who is this warrior?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
+      Text: Bri Bri Bicus Dicus
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ballerina Cappuccina
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Gorillo Watermellondrillo
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
+      Text: Frulli Frulla
+  - Question: Guess who?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: d06d997d4d675fd48b61ecf0f3a1ce13, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 2a6d4990af7a47847bd32d283f888071, type: 3}
+      Text: Bulbito Bandito Traktorito
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Girafa Celestre
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Cocofanto Elefanto
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bobritto Bandito
+  - Question: Guess who?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 8ab98b7dcd742c74f9ec7cc5ee2eee21, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 6ab1fe66ddbaa504a886fa43336b20b6, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 8ab98b7dcd742c74f9ec7cc5ee2eee21, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 6d00bfd44733969468ebac60d5937b0c, type: 3}
+      Text: Bobritto Bandito
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Girafa Celestre
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Cocofanto Elefanto
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Pot Hotspot
+  quizzesPerGame: 5
