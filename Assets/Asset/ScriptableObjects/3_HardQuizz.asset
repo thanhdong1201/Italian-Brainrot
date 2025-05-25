@@ -13,16 +13,166 @@ MonoBehaviour:
   m_Name: 3_HardQuizz
   m_EditorClassIdentifier: 
   Quizzes:
-  - Question: 
-    Type: 0
-    CorrectAudioClip: {fileID: 0}
-    QuestionSprite: {fileID: 0}
-    QuestionAudioClip: {fileID: 0}
-    QuizzAnswers: []
-  - Question: 
-    Type: 0
-    CorrectAudioClip: {fileID: 0}
-    QuestionSprite: {fileID: 0}
-    QuestionAudioClip: {fileID: 0}
-    QuizzAnswers: []
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 9041d8cdb38792447931bc0151e14838, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 011a635efcca4b84ca85426f1ed90abc, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 9041d8cdb38792447931bc0151e14838, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 46a86703d6a52824bade4f4133ef284e, type: 3}
+      Text: Bombardiro Crocodilo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: f3500f2aef04dfd43a9506badc590376, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 8108249cc31182445a76eb9b679bd06e, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: f3500f2aef04dfd43a9506badc590376, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 0c47073feb399e64d9a3da31b1bbb155, type: 3}
+      Text: Tralalero Tralala
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 2c4c78404df9a1444bce4864dded04d6, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 4020ace6e33643d4f93cfad83a9eea8c, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 2c4c78404df9a1444bce4864dded04d6, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
+      Text: Trippi Troppi
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: dcf0a681da408de48a55bca28619f50d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: cb5f978bd033ee5428d323e75a633933, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: dcf0a681da408de48a55bca28619f50d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 3e235143d3343884fa71a07e5d4ac34e, type: 3}
+      Text: Glorbo Fruttodrillo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 3ff3f6bc93344a947b9527a25c2306fa, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 4b6691f5ef6a6f74e8d16bbe806854a8, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 3ff3f6bc93344a947b9527a25c2306fa, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 81bd83f063b39944c947ea950ba75f72, type: 3}
+      Text: Girafa Celestre
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 3011b715558b7194c86b7e4de47d8e55, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: c4300a5abb3ef8b47adf8983f1683b6d, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 3011b715558b7194c86b7e4de47d8e55, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: c4300a5abb3ef8b47adf8983f1683b6d, type: 3}
+      Text: Lirili Rili Ralila
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 5b2f9336567ce4747948818d17169762, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: e145b3ebeb5174441bc1ff3d5fdf044a, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 5b2f9336567ce4747948818d17169762, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 0abb2654a91f7e14b909ce73ac1f712a, type: 3}
+      Text: Burbaloni Lulilolli
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Whose skeleton is this
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 01c04ebb598c20249b3596d751bc36dd, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
+      Text: Tung tung tung Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Who is this?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 7c25c33be4d582b4f9b8e7be96eba98d, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
+      Text: Tung tung tung Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
   quizzesPerGame: 10
