@@ -4883,7 +4883,7 @@ MonoBehaviour:
   setupQuizz_TextToImage: {fileID: 1964883296}
   setupQuizz_ImageToText: {fileID: 1691509114}
   setupQuizz_SoundToText: {fileID: 1876259438}
-  quizzSO: {fileID: 11400000, guid: d647728c62d4f10429facea119ce2dd7, type: 2}
+  listQuizzSO: {fileID: 11400000, guid: 932994d8b9158f1459c538568370d860, type: 2}
   onCountDownCompleted: {fileID: 11400000, guid: 775855a49f772074c83a85d1da24bd1d, type: 2}
   onStartGame: {fileID: 11400000, guid: b26c067845ab4564197881748cbe6e52, type: 2}
   onRestartCoutDown: {fileID: 11400000, guid: 79e951a5e38c80241a017119aecf5158, type: 2}

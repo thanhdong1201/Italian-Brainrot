@@ -23,14 +23,9 @@ public class UIMenu : MonoBehaviour
     }
     private void InitializeButtons()
     {
-        playBtn.onClick.AddListener(() => LoadScene());
+        playBtn.onClick.AddListener(() => mainMenuManager.ShowPanel(UIMenuPanel.Mode));
         characterBtn.onClick.AddListener(() => mainMenuManager.ShowPanel(UIMenuPanel.Character));
         settingsBtn.onClick.AddListener(() => mainMenuManager.ShowPanel(UIMenuPanel.Settings));
         quitBtn.onClick.AddListener(() => Application.Quit());
-    }
-    public void LoadScene()
-    {
-        loadingPanel.SetActive(true);
-        GameManager.Instance.LoadSceneManager.PrepareToLoadScene(3f);
     }
 }
