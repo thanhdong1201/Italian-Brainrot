@@ -62,7 +62,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadSceneManager: {fileID: 5624377085613589186}
   showInterstitial: {fileID: 11400000, guid: 209c9c49eead00349889855ca251c946, type: 2}
-  showRewarded: {fileID: 11400000, guid: 975f5c40bedec594c9dbbd3fd6f6fafe, type: 2}
   onStartGame: {fileID: 11400000, guid: b26c067845ab4564197881748cbe6e52, type: 2}
   onChangeWallpaper: {fileID: 11400000, guid: f575673cb9ea15a42bd7441687aa9a41, type: 2}
 --- !u!114 &4011763347702445978
@@ -242,7 +241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &442040083433008972
 RectTransform:
   m_ObjectHideFlags: 0
@@ -316,7 +315,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8121513786552307509}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9ba22358a798b647987d211bfef9c4e, type: 3}
   m_Name: 

@@ -7,10 +7,15 @@ public class AdManager : MonoBehaviour
 {
     public static AdManager Instance { get; private set; }
 
-    [Header("AdMob Ad Unit IDs (Replace with real IDs in production)")]
-    [SerializeField] private string bannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
-    [SerializeField] private string interstitialAdUnitId = "ca-app-pub-3940256099942544/1033173712";
-    [SerializeField] private string rewardedAdUnitId = "ca-app-pub-3940256099942544/5224354917";
+    //[Header("AdMob Ad Unit IDs (Replace with real IDs in production)")]
+    //[SerializeField] private string bannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
+    //[SerializeField] private string interstitialAdUnitId = "ca-app-pub-3940256099942544/1033173712";
+    //[SerializeField] private string rewardedAdUnitId = "ca-app-pub-3940256099942544/5224354917";
+
+    [Header("AdMob Ad Unit IDs (real IDs in production)")]
+    private string bannerAdUnitId = "ca-app-pub-1007946105258204/7846555603";
+    private string interstitialAdUnitId = "ca-app-pub-1007946105258204/7667442262";
+    private string rewardedAdUnitId = "ca-app-pub-1007946105258204/8788952246";
 
     [Header("Ad Settings")]
     [SerializeField] private float interstitialCooldown = 10f;

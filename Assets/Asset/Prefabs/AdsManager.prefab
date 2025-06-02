@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a99940a4e59b14b8feaeb8296bfd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bannerAdUnitId: ca-app-pub-3940256099942544/6300978111
-  interstitialAdUnitId: ca-app-pub-3940256099942544/1033173712
-  rewardedAdUnitId: ca-app-pub-3940256099942544/5224354917
+  bannerAdUnitId: ca-app-pub-1007946105258204/7846555603
+  interstitialAdUnitId: ca-app-pub-1007946105258204/7667442262
+  rewardedAdUnitId: ca-app-pub-1007946105258204/8788952246
   interstitialCooldown: 150
