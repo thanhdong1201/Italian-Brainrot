@@ -36,7 +36,7 @@ public class CharacterManager : MonoBehaviour
         characterUIMap = new Dictionary<CharacterSO, UICharacter>(uiCharacters.Count);
         for (int i = 0; i < uiCharacters.Count; i++)
         {
-            if(i <= 5) uiCharacters[i].SetCharacterData(characters[i], this, true);
+            if(i <= 11) uiCharacters[i].SetCharacterData(characters[i], this, true);
             else uiCharacters[i].SetCharacterData(characters[i], this, false);
 
             characterUIMap[characters[i]] = uiCharacters[i];
