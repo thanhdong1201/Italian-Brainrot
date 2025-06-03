@@ -913,4 +913,22 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Tralalero Tralala
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 7729741c253b6124dbeb58352d656414, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: a2c36fd4b8586cd4fa2f7008dedbcbe9, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 7729741c253b6124dbeb58352d656414, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: a2c36fd4b8586cd4fa2f7008dedbcbe9, type: 3}
+      Text: Los Tralaleritos Dicen Tralala
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Tuntuntuncitos Dicen Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tralalero Tralala
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Gorillo Watermellondrillo
   quizzesPerGame: 15
