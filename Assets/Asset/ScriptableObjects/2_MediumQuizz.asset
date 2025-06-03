@@ -193,24 +193,6 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 74e4647ca60f96d49a6b8fddbb1dd0fe, type: 3}
       Text: 
-  - Question: Who is the cutest?
-    Type: 0
-    CorrectAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: 6b0b5389ca0c05a4695ef52e96a68ef2, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: b1ecb43f39719d948b398e6a3cae1683, type: 3}
-      Text: 
   - Question: Wifi?
     Type: 0
     CorrectAudioClip: {fileID: 8300000, guid: 833bcc2080069f94d850ee75e7085346, type: 3}
@@ -915,20 +897,92 @@ MonoBehaviour:
       Text: Tralalero Tralala
   - Question: Whose sound is this?
     Type: 1
-    CorrectAudioClip: {fileID: 8300000, guid: 7729741c253b6124dbeb58352d656414, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: a2c36fd4b8586cd4fa2f7008dedbcbe9, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 7729741c253b6124dbeb58352d656414, type: 3}
+    CorrectAudioClip: {fileID: 8300000, guid: e6e0d50b104c70b4e88b8ef927dc0fa8, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: e6e0d50b104c70b4e88b8ef927dc0fa8, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 21300000, guid: a2c36fd4b8586cd4fa2f7008dedbcbe9, type: 3}
-      Text: Los Tralaleritos Dicen Tralala
+      Sprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
+      Text: Svinino Bombondino
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: Los Tuntuntuncitos Dicen Sahur
+      Text: Tric Trac Baraboom
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: Tralalero Tralala
+      Text: Trulimero Trulicina
     - Answer: 0
       Sprite: {fileID: 0}
-      Text: Gorillo Watermellondrillo
+      Text: Gangster Footera Criminalera
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 1d2b2d2529bab4949acd10cc478affbd, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 887315b5c536b454aaf8bb299efcd209, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 1d2b2d2529bab4949acd10cc478affbd, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 887315b5c536b454aaf8bb299efcd209, type: 3}
+      Text: Matteo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Frulli Frulla
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Pussini Sushini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Orangutini Ananasini
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 193fa505714894f41a520ddc04fda016, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 9c611e07d108e9c4dbb1e253074a0c6a, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 193fa505714894f41a520ddc04fda016, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 9c611e07d108e9c4dbb1e253074a0c6a, type: 3}
+      Text: Gangster Footera Criminalera
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bulbito Bandito Traktorito
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bicus de Dicus
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bobritto Bandito
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
+      Text: Blueberrinni Octopussini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Boneca Ambalabu
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bananita Dolfinita
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tigrrullini Watermellini
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
+      Text: Blueberrinni Octopussini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Boneca Ambalabu
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bananita Dolfinita
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tigrrullini Watermellini
   quizzesPerGame: 15
