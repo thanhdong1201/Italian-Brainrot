@@ -157,78 +157,6 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Zibra Zubra Zibralini
-  - Question: Who is this?
-    Type: 2
-    CorrectAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 7c25c33be4d582b4f9b8e7be96eba98d, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
-      Text: Tung tung tung Sahur
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Los Tuntuntuncitos Dicen Sahur
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Capuccino Assassino
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
-  - Question: Who has the biggest feet?
-    Type: 0
-    CorrectAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: 0c47073feb399e64d9a3da31b1bbb155, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: b1ecb43f39719d948b398e6a3cae1683, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: caf3f6948f4573249a89b871b7592fea, type: 3}
-      Text: 
-  - Question: Wow Wow Wow! Who is this???
-    Type: 2
-    CorrectAudioClip: {fileID: 8300000, guid: 8c812880799b6644b8f872377ff1cd10, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 8c812880799b6644b8f872377ff1cd10, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
-      Text: Rhino Toasterino
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Tric Trac Baraboom
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Tigrrullini Watermellini
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
-  - Question: Who is this warrior?
-    Type: 2
-    CorrectAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
-      Text: Bri Bri Bicus Dicus
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Ballerina Cappuccina
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Gorillo Watermellondrillo
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
-      Text: Frulli Frulla
   - Question: Guess who?
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
@@ -301,4 +229,149 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Bobritto Bandito
-  quizzesPerGame: 5
+  - Question: Who is this?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 2e5c5e4d9adc59c40b894dc5e396132f, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 13db770ba010ce54a9e1ba1a3ba6fd81, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 2e5c5e4d9adc59c40b894dc5e396132f, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 13db770ba010ce54a9e1ba1a3ba6fd81, type: 3}
+      Text: Tiptop Troptrop
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Trulimero Trulicina
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Trippi Troppi
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tric Trac Baraboom
+  - Question: Who is this?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: d520681cc11a75048a1fd4b1f7c72381, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: e9c847a03a9aa44418b1b473fc09e78b, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: d520681cc11a75048a1fd4b1f7c72381, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: e9c847a03a9aa44418b1b473fc09e78b, type: 3}
+      Text: Sahur sahur sahur Tung
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tung tung tung Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Te Te Te Te Te Te Te Te Te Sahur
+  - Question: This is not Br Br Patapim?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: d1d43e41a1905f64b896f6a80ecb2888, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 93087cc129d33964c83d27468126f46e, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: d1d43e41a1905f64b896f6a80ecb2888, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 93087cc129d33964c83d27468126f46e, type: 3}
+      Text: Pipam Brr Brr
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Brr Brr Patapim
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Sigma boy
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Francesco
+  - Question: Who is Meli Trula China Trula?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: af66f4260d46b58478fe93a77eb3d151, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: d558d66dcc6dd664f9e3fb162b25225d, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: af66f4260d46b58478fe93a77eb3d151, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: d558d66dcc6dd664f9e3fb162b25225d, type: 3}
+      Text: Meli Trula China Trula
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: eb40e11c59160db4187bf79bc623ad02, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 73fb6961f39269a499368ec5f2cbf35e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
+      Text: 
+  - Question: Lalatrelo Lalatraa?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: dc62a6b4ede33d54f86503f47642c012, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 9325fa7b416fb2941a1399c6a002f1ca, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: dc62a6b4ede33d54f86503f47642c012, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 9325fa7b416fb2941a1399c6a002f1ca, type: 3}
+      Text: Lalatrelo Lalatraa
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 0c47073feb399e64d9a3da31b1bbb155, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 879faaaa9b3d0094b8745156e6457093, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: a2c36fd4b8586cd4fa2f7008dedbcbe9, type: 3}
+      Text: 
+  - Question: Who is this?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 452dd095f8e47fb41b920d0dd261f137, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: c21d86e1409ba934181acd9678b61942, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 452dd095f8e47fb41b920d0dd261f137, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: c21d86e1409ba934181acd9678b61942, type: 3}
+      Text: Bananananana Chimpananana
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Orangutini Ananasini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Gorillo Watermellondrillo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bananita Dolfinita
+  - Question: Who is this?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 3da1c2cc897436a4490fc6eb16fbdcce, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 019e219118dc1a94ea983aeb3e05c0ee, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 3da1c2cc897436a4490fc6eb16fbdcce, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 019e219118dc1a94ea983aeb3e05c0ee, type: 3}
+      Text: Crocodilo Bombardino
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bombardino Crocodilo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bombombini Gusini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Gorillo Watermellondrillo
+  - Question: Can you guess who?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 08a609b4f3fa8fc45817ed211e0e3b58, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 1d645b48724bff449b8e6c07da42d4a5, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 08a609b4f3fa8fc45817ed211e0e3b58, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 1d645b48724bff449b8e6c07da42d4a5, type: 3}
+      Text: Tripa tropa tralala lirili larila tug tug sahur boneca tug tug tralalelo
+        trip tropa crocodina
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: c4300a5abb3ef8b47adf8983f1683b6d, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
+      Text: 
+  quizzesPerGame: 8
