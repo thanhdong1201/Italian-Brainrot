@@ -139,42 +139,6 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 0abb2654a91f7e14b909ce73ac1f712a, type: 3}
       Text: 
-  - Question: Guess who?
-    Type: 2
-    CorrectAudioClip: {fileID: 8300000, guid: 2c4c78404df9a1444bce4864dded04d6, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 2c4c78404df9a1444bce4864dded04d6, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
-      Text: Trippi Troppi
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Trulimero Trulicina
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Tric Trac Baraboom
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Tralalero Tralala
-  - Question: Guess who?
-    Type: 2
-    CorrectAudioClip: {fileID: 8300000, guid: b5759388eae6f8d41a64c5348cbb54ff, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 1b6d58d8e5991cd46915aa6d3a5e6402, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: b5759388eae6f8d41a64c5348cbb54ff, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: 2a64ac7e3c572cd49bbf2449fb3489fb, type: 3}
-      Text: Boneca Ambalabu
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Girafa Celestre
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Cocofanto Elefanto
-    - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Bobritto Bandito
   - Question: Capybara?
     Type: 0
     CorrectAudioClip: {fileID: 8300000, guid: 5b2f9336567ce4747948818d17169762, type: 3}

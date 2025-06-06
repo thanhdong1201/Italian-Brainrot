@@ -77,6 +77,7 @@ public class QuizzButton : MonoBehaviour
         StopAnimation();
         if (isSelected)
         {
+            SoundManager.Instance.PlayButtonClickSound();
             tween = transform.DOScale(scaleFactor * localScale, duration).SetUpdate(UpdateType.Normal, true);
         }
         else

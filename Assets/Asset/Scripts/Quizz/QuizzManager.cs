@@ -102,24 +102,27 @@ public class QuizzManager : MonoBehaviour
     {
         if (quizzSOInstance.IsGameCompleted)
         {
-            CompleteQuizzes(); 
+            CompleteQuizzes();
             return;
         }
 
         continueBtn.interactable = false;
         ResetQuizz();
-        GetRandomQuizz();
+        GetRandomQuizz(true);
         GetRandomQuizzAnswer();
     }
-    public void GetRandomQuizz()
+    public void GetRandomQuizz(bool increaseQuizzNumber)
     {
         int randomQuizzIndex = Random.Range(0, quizzSOInstance.Quizzes.Count);
         SelectedQuizz = quizzSOInstance.Quizzes[randomQuizzIndex];
         quizzSOInstance.Quizzes.RemoveAt(randomQuizzIndex);
         ShowQuizzUI(SelectedQuizz.Type);
 
-        quizzNumber++;
-        quizzNumberText.text = $"Question {quizzNumber}/{quizzSOInstance.QuizzesPerGame}";
+        if (increaseQuizzNumber)
+        {
+            quizzNumber++;
+            quizzNumberText.text = $"Question {quizzNumber}/{quizzSOInstance.QuizzesPerGame}";
+        }
     }
     public void GetRandomQuizzAnswer()
     {
@@ -181,23 +184,35 @@ public class QuizzManager : MonoBehaviour
     }
     private void FailQuizz()
     {
-        quizzSOInstance.OnQuizzCompleted();
+        SoundManager.Instance.StopMusic();
+        //quizzSOInstance.OnQuizzCompleted();
         setupQuizzBase.SetAnswerText(wrongs[Random.Range(0, wrongs.Count)]);
         SoundManager.Instance.PlayIncorrectSound();
         Invoke(nameof(ShowRetryUI), 2f);
     }
     private void ShowRetryUI()
     {
+        SoundManager.Instance.StopMusic();
         UIManager.Instance.ShowPanel(UIPanel.Retry);
+        SoundManager.Instance.PlayGameOverSound();
     }
     private void CompleteQuizzes()
     {
+        SoundManager.Instance.StopMusic();
         UIManager.Instance.ShowPanel(UIPanel.Complete);
         AnalyticsManager.Instance.LogLevelComplete("level_quizz", CalculateStarRating().ToString());
     }
     private void OnRetry()
     {
-        Invoke(nameof(ActiveNewQuizz), 1f);
+        SoundManager.Instance.StopMusic();
+        Invoke(nameof(RetryQuizz), 1f);
+    }
+    private void RetryQuizz()
+    {
+        continueBtn.interactable = false;
+        ResetQuizz();
+        GetRandomQuizz(false);
+        GetRandomQuizzAnswer();
     }
     private void OnIgnoreRetry()
     {
@@ -213,14 +228,26 @@ public class QuizzManager : MonoBehaviour
 
         float ratio = (float)correctAnswers / maxQuizz;
 
-        if (ratio >= 1f)        // 100%
+        if (ratio >= 1f)  // 100%
+        {
+            SoundManager.Instance.PlayCompleteGameSound();
             return StarRating.ThreeStars;
+        }
         else if (ratio >= 0.666f)  // >= 10/15
+        {
+            SoundManager.Instance.PlayCompleteGameSound();
             return StarRating.TwoStars;
+        }
         else if (ratio >= 0.333f)  // >= 5/15
+        {
+
             return StarRating.OneStar;
+        }
         else
+        {
+
             return StarRating.ZeroStars;
+        }
     }
 
     public int GetTotalCorrectAnswers() => quizzSOInstance.TotalCorrectAnswers;

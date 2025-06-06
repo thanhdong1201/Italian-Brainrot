@@ -175,7 +175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctSound: {fileID: 8300000, guid: 18870a88b116b9c4588e3279bc8b29f2, type: 3}
-  incorrectSound: {fileID: 8300000, guid: 18870a88b116b9c4588e3279bc8b29f2, type: 3}
+  incorrectSound: {fileID: 8300000, guid: b558ae9003af7074aaf20ba9f46613c3, type: 3}
+  completeGameSound: {fileID: 8300000, guid: bd9fc0d10c2f6034a92c518f4f28a718, type: 3}
+  gameOverSound: {fileID: 8300000, guid: 2f2d54d80e1dca6459113570a24a47f2, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 680f18bd4250314419cf56d006b740f9, type: 3}
   musicSource: {fileID: 8160039398677378893}
   soundfxSource: {fileID: 7589878491976029465}
 --- !u!1 &8926579361972295915

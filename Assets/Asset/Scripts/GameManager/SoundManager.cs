@@ -7,6 +7,10 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance { get; private set; }
     [SerializeField] private AudioClip correctSound;
     [SerializeField] private AudioClip incorrectSound;
+    [SerializeField] private AudioClip completeGameSound;
+    [SerializeField] private AudioClip gameOverSound;
+    [SerializeField] private AudioClip buttonClickSound;
+
 
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource soundfxSource;
@@ -43,9 +47,14 @@ public class SoundManager : MonoBehaviour
             musicSource.Play();
         }
     }
+
     public void PlaySound(AudioClip clip)
     {
         soundfxSource.PlayOneShot(clip);
+    }
+    public void PlayButtonClickSound()
+    {
+        PlaySound(buttonClickSound);
     }
     public void PlayCorrectSound()
     {
@@ -54,6 +63,14 @@ public class SoundManager : MonoBehaviour
     public void PlayIncorrectSound()
     {
         PlaySound(incorrectSound);
+    }
+    public void PlayCompleteGameSound()
+    {
+        PlaySound(completeGameSound);
+    }
+    public void PlayGameOverSound()
+    {
+        PlaySound(gameOverSound);
     }
     public void StopMusic()
     {
