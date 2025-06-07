@@ -985,4 +985,22 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: La vaca Saturno Saturnita
+  - Question: Sushi Sushi!!!
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: afde7c21e8116504a94fd64236fea2b9, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 037c36383dc3bdd46b5ab2f983dd1398, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: afde7c21e8116504a94fd64236fea2b9, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 037c36383dc3bdd46b5ab2f983dd1398, type: 3}
+      Text: Pussini Sushini
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 06b148baa85a7eb4d8a2fb6aea0dff82, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: bf1e4ef464484bc42b0d06176efa6359, type: 3}
+      Text: 
   quizzesPerGame: 15
