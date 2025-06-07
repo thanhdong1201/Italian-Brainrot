@@ -230,12 +230,10 @@ public class QuizzManager : MonoBehaviour
 
         if (ratio >= 1f)  // 100%
         {
-            SoundManager.Instance.PlayCompleteGameSound();
             return StarRating.ThreeStars;
         }
         else if (ratio >= 0.666f)  // >= 10/15
         {
-            SoundManager.Instance.PlayCompleteGameSound();
             return StarRating.TwoStars;
         }
         else if (ratio >= 0.333f)  // >= 5/15

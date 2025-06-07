@@ -7,7 +7,6 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance { get; private set; }
     [SerializeField] private AudioClip correctSound;
     [SerializeField] private AudioClip incorrectSound;
-    [SerializeField] private AudioClip completeGameSound;
     [SerializeField] private AudioClip gameOverSound;
     [SerializeField] private AudioClip buttonClickSound;
 
@@ -64,13 +63,16 @@ public class SoundManager : MonoBehaviour
     {
         PlaySound(incorrectSound);
     }
-    public void PlayCompleteGameSound()
-    {
-        PlaySound(completeGameSound);
-    }
     public void PlayGameOverSound()
     {
         PlaySound(gameOverSound);
+    }
+    public void StopSound()
+    {
+        if (soundfxSource.isPlaying)
+        {
+            soundfxSource.Stop();
+        }
     }
     public void StopMusic()
     {

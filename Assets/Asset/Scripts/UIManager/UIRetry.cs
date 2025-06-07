@@ -22,11 +22,13 @@ public class UIRetry : MonoBehaviour
     }
     private void IgnoreRetry()
     {
+        SoundManager.Instance.StopSound();
         UIManager.Instance.ShowPanel(UIPanel.Gameplay);
         onIgnoreRetry.RaiseEvent();
     }
     private void RetryWithAds()
     {
+        SoundManager.Instance.StopSound();
         AdManager.Instance.ShowRewardedAd(() =>
         {
             AnalyticsManager.Instance.LogAdImpression("rewarded");

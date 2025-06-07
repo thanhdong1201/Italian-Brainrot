@@ -11,6 +11,12 @@ public class UIGameComplete : MonoBehaviour
     [Header("Characters")]
     [SerializeField] private List<CharacterConversation> characterConversations;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip threeStarSound;
+    [SerializeField] private AudioClip twoStarSound;
+    [SerializeField] private AudioClip oneStarSound;
+    [SerializeField] private AudioClip zeroStarSound;
+
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI congratulationText;
     [SerializeField] private TextMeshProUGUI totalAnswerText;
@@ -63,24 +69,28 @@ public class UIGameComplete : MonoBehaviour
                 characterConversationText.text = characterConversations[0].text;
                 ShowCharacter(characterConversations[0].character);
                 ShowStar(0);
+                SoundManager.Instance.PlaySound(zeroStarSound);
                 break;
             case StarRating.OneStar:
                 congratulationText.text = "You can do better!";
                 characterConversationText.text = characterConversations[1].text;
                 ShowCharacter(characterConversations[1].character);                  
                 ShowStar(1);
+                SoundManager.Instance.PlaySound(oneStarSound);
                 break;
             case StarRating.TwoStars:
                 congratulationText.text = "Good job!";
                 characterConversationText.text = characterConversations[2].text;
                 ShowCharacter(characterConversations[2].character);
                 ShowStar(2);
+                SoundManager.Instance.PlaySound(twoStarSound);
                 break;
             case StarRating.ThreeStars:
                 congratulationText.text = "Excellent!";
                 characterConversationText.text = characterConversations[3].text;
                 ShowCharacter(characterConversations[3].character);
                 ShowStar(3);
+                SoundManager.Instance.PlaySound(threeStarSound);
                 break;
         }
 
