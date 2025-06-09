@@ -949,4 +949,112 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
+  - Question: Tric Trac Baraboom
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 9ff0f9e24076308459bb8637c040683e, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 9ff0f9e24076308459bb8637c040683e, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
+      Text: Tric Trac Baraboom
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 9c611e07d108e9c4dbb1e253074a0c6a, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
+      Text: 
+  - Question: Help me find the real Frulli Frulla!
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 5d09cd8ba97f77349954406d5ff57494, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: eee4e2d1dd8b13d4d8eaf7a123161e85, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 5d09cd8ba97f77349954406d5ff57494, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: eee4e2d1dd8b13d4d8eaf7a123161e85, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: b370062c26187b34f8e461a85addbc7a, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 990b5c8b4b07fe242aa31b83ef1a1268, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: af36b4eb0adb4d4489f4017f849dadd7, type: 3}
+      Text: 
+  - Question: Who is the real Cacto Ippopotamo?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 11c72150249d08142856c7e46951cd49, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: e2692e0c9b23f1444b863f42c62e8031, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 11c72150249d08142856c7e46951cd49, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: e2692e0c9b23f1444b863f42c62e8031, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 9c3799af5d0bec245a0f1f0bf11b8cc5, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: e639fcbb8b2e9da45a983d5a426fab40, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 66cf4956d3958274eb7201eddbd8f702, type: 3}
+      Text: 
+  - Question: Who is the real Ta Ta Ta Sahur?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 957f796f72f05c34cb8c3b2c239bd667, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 9e84c7b2cf702e74ca45c50010d83286, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 957f796f72f05c34cb8c3b2c239bd667, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 9e84c7b2cf702e74ca45c50010d83286, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 04033c517e4a1414480a2fdea2624968, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3b843ed52e28670438b9cb98362e93eb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 1cd4a4ff2b09fd946afcdd9f20a7cf16, type: 3}
+      Text: 
+  - Question: Who is the real Frigo Camelo?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: a16c3cd8dbf847f4783c30f99106b3e7, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 0b235e23db73cb24fa14c3f2642badad, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: a16c3cd8dbf847f4783c30f99106b3e7, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 0b235e23db73cb24fa14c3f2642badad, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 619c3159cad3ca5458da20e356bc3d91, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 223d7d20c38e6bf4cbc4b91b60dfc24b, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3e6b6fb783f37d9489207701f7565265, type: 3}
+      Text: 
+  - Question: They all look the same! Who is the real Burbaloni Lulilolli?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 5b2f9336567ce4747948818d17169762, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 9dd9318585bea6547bf681a59bd36840, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 5b2f9336567ce4747948818d17169762, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 9dd9318585bea6547bf681a59bd36840, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: fd9188b103b399842be6f9df89f5882e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 4c4d602ece464984b8618e4ab811446f, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: d7a1e301d632bc14a840bbf2b8c8d51d, type: 3}
+      Text: 
   quizzesPerGame: 15

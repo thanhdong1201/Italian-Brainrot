@@ -6,10 +6,12 @@ public class LoadSceneManager : MonoBehaviour
 {
     public void ReturnMainMenu()
     {
+        SoundManager.Instance.StopSound();
         SceneManager.LoadScene("Menu");
     }
     public void Replay()
     {
+        SoundManager.Instance.StopSound();
         SceneManager.LoadScene("Quizz");
     }
     private AsyncOperation asyncLoad;

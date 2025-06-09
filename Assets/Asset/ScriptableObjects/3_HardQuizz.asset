@@ -536,58 +536,40 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 0}
       Text: Tric Trac Baraboom
-  - Question: Cow + Saturn?
-    Type: 2
-    CorrectAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 8b1b1a171af3d1c499c4b1a2abcb676b, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
+  - Question: So, who really is Sigma Boy?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: b6632228e0d74a14b9444eba7bb36121, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 4b45e5491a679ae4daf5b2c6f9fca56b, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: b6632228e0d74a14b9444eba7bb36121, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
-      Text: La vaca Saturno Saturnita
+      Sprite: {fileID: 21300000, guid: 4b45e5491a679ae4daf5b2c6f9fca56b, type: 3}
+      Text: 
     - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Gangster Footera Criminalera
+      Sprite: {fileID: 21300000, guid: 571df5f6b1a5d7948a8ef345d8d8340c, type: 3}
+      Text: 
     - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Svinino Bombondino
+      Sprite: {fileID: 21300000, guid: 234e9b6fcbce3db479492c5cf0035efd, type: 3}
+      Text: 
     - Answer: 0
-      Sprite: {fileID: 0}
-      Text: Tric Trac Baraboom
-  - Question: Tric Trac Baraboom
+      Sprite: {fileID: 21300000, guid: 3c2efb9a48db98c4d8fc3bb325875e94, type: 3}
+      Text: 
+  - Question: Hmmm who is Tric Trac Baraboom?
     Type: 0
     CorrectAudioClip: {fileID: 8300000, guid: 9ff0f9e24076308459bb8637c040683e, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 2e3b201a6f156a548b520e214dee8fe7, type: 3}
     QuestionAudioClip: {fileID: 8300000, guid: 9ff0f9e24076308459bb8637c040683e, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
-      Text: Tric Trac Baraboom
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
+      Sprite: {fileID: 21300000, guid: 2e3b201a6f156a548b520e214dee8fe7, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 21300000, guid: 9c611e07d108e9c4dbb1e253074a0c6a, type: 3}
+      Sprite: {fileID: 21300000, guid: f49c4b16a0ada574198f9892cde0472c, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
-      Text: 
-  - Question: Tric Trac Baraboom
-    Type: 0
-    CorrectAudioClip: {fileID: 8300000, guid: 9ff0f9e24076308459bb8637c040683e, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: 9ff0f9e24076308459bb8637c040683e, type: 3}
-    QuizzAnswers:
-    - Answer: 1
-      Sprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
-      Text: Tric Trac Baraboom
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
+      Sprite: {fileID: 21300000, guid: 04bb82309c4d3ea439595e000687c3d6, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 21300000, guid: 9c611e07d108e9c4dbb1e253074a0c6a, type: 3}
-      Text: 
-    - Answer: 0
-      Sprite: {fileID: 21300000, guid: 3f2ec480c5450e149a15a9089150e43f, type: 3}
+      Sprite: {fileID: 21300000, guid: 4c341ae730416ad44b7589c7cf342acc, type: 3}
       Text: 
   quizzesPerGame: 8

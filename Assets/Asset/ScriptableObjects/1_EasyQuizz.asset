@@ -1003,4 +1003,58 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: bf1e4ef464484bc42b0d06176efa6359, type: 3}
       Text: 
+  - Question: Hmmm who is Ballerina Cappuccina?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 00ae874bccdd0a94b9f1e7ebbb69bab0, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 06b148baa85a7eb4d8a2fb6aea0dff82, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 00ae874bccdd0a94b9f1e7ebbb69bab0, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 06b148baa85a7eb4d8a2fb6aea0dff82, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: a3da7602f3174a24d943549d08528174, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: b9a1878c86cc08643a3748e0b393f39d, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 2f15739bcd259cc4cacbcb236e389f27, type: 3}
+      Text: 
+  - Question: So, who really is Br Br Patapim?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: bf37b58a106b0c3469214e86a29f68da, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: bf37b58a106b0c3469214e86a29f68da, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 68019a4d0551ce344bb1f201c20e3611, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 92b4d683cc17fca4097032844b4c3b6b, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: e4db9d3dba467d54e91e939fb1d30f8e, type: 3}
+      Text: 
+  - Question: Help me find the real Girafa Celestre!
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 3ff3f6bc93344a947b9527a25c2306fa, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 81bd83f063b39944c947ea950ba75f72, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 3ff3f6bc93344a947b9527a25c2306fa, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 81bd83f063b39944c947ea950ba75f72, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7ea12f95467b235448365f395ac1dbf0, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 202384105b67ced4eae98854c33c6a23, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 4c4f08eb6374e32408697d60a7815d87, type: 3}
+      Text: 
   quizzesPerGame: 15
