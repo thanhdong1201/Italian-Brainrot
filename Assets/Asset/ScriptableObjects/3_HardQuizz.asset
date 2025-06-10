@@ -572,4 +572,58 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 4c341ae730416ad44b7589c7cf342acc, type: 3}
       Text: 
+  - Question: They all look the same! Who is the real Pussini Sushini?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: afde7c21e8116504a94fd64236fea2b9, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 037c36383dc3bdd46b5ab2f983dd1398, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: afde7c21e8116504a94fd64236fea2b9, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 037c36383dc3bdd46b5ab2f983dd1398, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: cdfa5b92d0bd97c459d6c000b412da5c, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 903536550f5c71e4b86de42ae5a162eb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7b09045e10d49b649b7ae7ef8d89cf8b, type: 3}
+      Text: 
+  - Question: Gangster Footera Criminalera?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 193fa505714894f41a520ddc04fda016, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 9c611e07d108e9c4dbb1e253074a0c6a, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 193fa505714894f41a520ddc04fda016, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 9c611e07d108e9c4dbb1e253074a0c6a, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 60f07191e5b8be841aa3d5ca0bae1db3, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: f7140efb30fb10f40b995e681cd78420, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 2e480f645eb905644b41d17b8926ede6, type: 3}
+      Text: 
+  - Question: Can you guess who is the real Bulbito Bandito Traktorito?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 2a6d4990af7a47847bd32d283f888071, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 879d60666d8eb714c87a119e98189f21, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 2a6d4990af7a47847bd32d283f888071, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: baa1116b83b9b304b8137db8c9f08d83, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: e9ea167452344ef4a95e25076d18cebc, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: c6e67661e9211e34f91941788365834e, type: 3}
+      Text: 
   quizzesPerGame: 8

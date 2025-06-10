@@ -1057,4 +1057,94 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: d7a1e301d632bc14a840bbf2b8c8d51d, type: 3}
       Text: 
+  - Question: Who is the real Spioniro Golubiro?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 6235fae4e232bcc47b310f71a7394958, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: e80d476c715005b4b8f924af53346e88, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 6235fae4e232bcc47b310f71a7394958, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: e80d476c715005b4b8f924af53346e88, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7eefd72f843b6624aa0c3b8062cfdeeb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: c36f07aba975fbb4b9d2d4491759bb37, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 2ea20d882f31a344e8f95c7588e42bfc, type: 3}
+      Text: 
+  - Question: They all look the same! Who is the real Bicus de Dicus?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 5b136495b7cb66a4c836969bfb9480d6, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3e9e094eb71d6a144918f52f2b543f80, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7934e157eac2a9747823107ade8bb6bb, type: 3}
+      Text: 
+  - Question: Help me find the real Ballerino Lololo
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 7f438d6a894fffa409d83220241c863e, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: a2cd31b98539eb64f8dad3da9c101c5e, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 7f438d6a894fffa409d83220241c863e, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: a2cd31b98539eb64f8dad3da9c101c5e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 0d6685a2682f4bb4d82d89082a5567bb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: e59ff72b55fb7ee41bd10d0d007b1370, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 0881c12fdbc4c1c468ab27f4ae6b55d5, type: 3}
+      Text: 
+  - Question: Can you guess who is Blueberrinni Octopussini?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 038ec69af999157489db09a9bc16938d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: eb78c51d455cf5a4fbb1d6589ef6608e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: ec04ff843f32e5a4fa7b9e34faefe0c3, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 8ed0974ec3994eb4bb21367cb0d13fa4, type: 3}
+      Text: 
+  - Question: Who is Burito Hotspotini?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 347527d1aea018347947680a89a79bc1, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 0c52417a24de6d44cbe6d03c29a598f5, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 347527d1aea018347947680a89a79bc1, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 0c52417a24de6d44cbe6d03c29a598f5, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 57fa4fda6e37bd04a8c0dc572e53da40, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 2daa30430b5ce954bbf481f6d5f2f85b, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3983e4c30de741d49b2f3cb8300fe5d7, type: 3}
+      Text: 
   quizzesPerGame: 15
