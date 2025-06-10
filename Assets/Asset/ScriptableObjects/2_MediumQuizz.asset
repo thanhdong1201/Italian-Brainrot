@@ -1147,4 +1147,40 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 3983e4c30de741d49b2f3cb8300fe5d7, type: 3}
       Text: 
+  - Question: Who is Spioniro Golubiro?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 6235fae4e232bcc47b310f71a7394958, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: e80d476c715005b4b8f924af53346e88, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 6235fae4e232bcc47b310f71a7394958, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: e80d476c715005b4b8f924af53346e88, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7eefd72f843b6624aa0c3b8062cfdeeb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: c36f07aba975fbb4b9d2d4491759bb37, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 2ea20d882f31a344e8f95c7588e42bfc, type: 3}
+      Text: 
+  - Question: Oh no I can't find La vaca Saturno Saturnita?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: d65139d03c9454842aef0432ed167958, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: a8b6b2d43fe9ef5458d8005da3217fdb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 8e13010f2a157f84c9f647b09a2cb1ec, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 906c6c6050b4707459619ad78f546563, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 25c5883bc5cc01748b6a37aeb69f4adf, type: 3}
+      Text: 
   quizzesPerGame: 15

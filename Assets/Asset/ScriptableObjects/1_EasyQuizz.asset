@@ -1057,4 +1057,112 @@ MonoBehaviour:
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 4c4f08eb6374e32408697d60a7815d87, type: 3}
       Text: 
+  - Question: Who is U Din Din Din Din Dun Ma Din Din Din Dun?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: f949c3816a6d4dd46953ebabcd2dde86, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: b1ecb43f39719d948b398e6a3cae1683, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: f949c3816a6d4dd46953ebabcd2dde86, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: b1ecb43f39719d948b398e6a3cae1683, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3786cacec1a505948a59f62169214432, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 2d8c5ffd72ab81e4eaa28ff2007b2580, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: b80ca0d76f254fb42a1efcec00a8afda, type: 3}
+      Text: 
+  - Question: Can you guess who is Capuccino Assassino?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 352f85551e58f7b41948fcc5554b56c4, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 352f85551e58f7b41948fcc5554b56c4, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 8c62c68beb825654d9b59244740e6667, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 20b9f40de5ae13242800c726b238c3ea, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: f057c974a6cd0d84f802fafd948e7e4f, type: 3}
+      Text: 
+  - Question: Who is the real Trulimero Trulicina?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: a1285b28c7543774bbfffee1d4dba9f3, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: eb40e11c59160db4187bf79bc623ad02, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: a1285b28c7543774bbfffee1d4dba9f3, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: eb40e11c59160db4187bf79bc623ad02, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 77a86e6ea4aafca42acdb1ad7b25559a, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 639a0abc6e1bb6b4895d5cf8fc1f3335, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: f309628b23fd1834cad93c867325ea7a, type: 3}
+      Text: 
+  - Question: They all look the same! Who is the real Glorbo Fruttodrillo?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: dcf0a681da408de48a55bca28619f50d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 3e235143d3343884fa71a07e5d4ac34e, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: dcf0a681da408de48a55bca28619f50d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 3e235143d3343884fa71a07e5d4ac34e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3cbd796f7514d0049b63b78fffe93da7, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 41bab6e1338743c48a00079d4a594337, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 4351651b1f2c93d4a82c7f1550fa7700, type: 3}
+      Text: 
+  - Question: Bobritto Bandito???
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 8ab98b7dcd742c74f9ec7cc5ee2eee21, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 6d00bfd44733969468ebac60d5937b0c, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 8ab98b7dcd742c74f9ec7cc5ee2eee21, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 6d00bfd44733969468ebac60d5937b0c, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: df8fafc048e5e0942b7d0d0cc91e8a54, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: e3f31a7e6b3fcfb44ade3f84f943beaa, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 5b7b501d716e6994093258b8ee64feb0, type: 3}
+      Text: 
+  - Question: Who is the real Tung tung tung Sahur?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 1297269cde4df7141a821cf20e377f3d, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 5d8a376eb717c4a4d93843e89eba78cb, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 6d6c3781dafd453478f12dfe1eaa1b08, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 452a161f0a53397408fd2441cbe52f49, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: b33b5546f3446b84aad2142244c8da82, type: 3}
+      Text: 
   quizzesPerGame: 15
