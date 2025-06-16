@@ -651,7 +651,7 @@ MonoBehaviour:
     QuestionAudioClip: {fileID: 8300000, guid: 1d2b2d2529bab4949acd10cc478affbd, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 21300000, guid: 887315b5c536b454aaf8bb299efcd209, type: 3}
+      Sprite: {fileID: 21300000, guid: 3b5beda7e165e66458ccc428e09a3ae0, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: ac580f8ba01d51c41b12fd6b0c0b5f31, type: 3}
@@ -660,6 +660,24 @@ MonoBehaviour:
       Sprite: {fileID: 21300000, guid: 7cabab747e30be549967693b3a0adb8a, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 21300000, guid: 3b5beda7e165e66458ccc428e09a3ae0, type: 3}
+      Sprite: {fileID: 21300000, guid: 887315b5c536b454aaf8bb299efcd209, type: 3}
       Text: 
+  - Question: Can you guess whose sound this is?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 0fde4b30d12cb7740b8a06c9d80921a6, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: ed25d4b8f131834419fc4e3527c5855a, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 0fde4b30d12cb7740b8a06c9d80921a6, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: ed25d4b8f131834419fc4e3527c5855a, type: 3}
+      Text: Bumbulfabi Bafibum
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Sigma boy
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Cacto Ippopotamo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Orangutini Ananasini
   quizzesPerGame: 8
