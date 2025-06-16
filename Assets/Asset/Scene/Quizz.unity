@@ -7621,7 +7621,7 @@ MonoBehaviour:
     text: Tralalero Tralala is very happy because you answered everything correctly
   threeStarSound: {fileID: 8300000, guid: bd9fc0d10c2f6034a92c518f4f28a718, type: 3}
   twoStarSound: {fileID: 8300000, guid: e5b0d6e73f180634c9061489ceed0d98, type: 3}
-  oneStarSound: {fileID: 8300000, guid: 9a989b5a77c81a64185b56a6b5537006, type: 3}
+  oneStarSound: {fileID: 8300000, guid: 78837b83dc4032143aff92f7cdd2ee0b, type: 3}
   zeroStarSound: {fileID: 8300000, guid: 9a989b5a77c81a64185b56a6b5537006, type: 3}
   congratulationText: {fileID: 1951773501}
   totalAnswerText: {fileID: 1546573636}
@@ -8246,7 +8246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1852734582
 RectTransform:
   m_ObjectHideFlags: 0
