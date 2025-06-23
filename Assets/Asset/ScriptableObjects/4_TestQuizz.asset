@@ -1,0 +1,520 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3c16316d9d3a641bbd8f41c0b92cb0, type: 3}
+  m_Name: 4_TestQuizz
+  m_EditorClassIdentifier: 
+  Quizzes:
+  - Question: Can you guess who?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 2dc1df2a4c552204abd65368642c84fd, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 2ab6e53cd1e7f0948805403685f9b39a, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 2dc1df2a4c552204abd65368642c84fd, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 2ab6e53cd1e7f0948805403685f9b39a, type: 3}
+      Text: Los Boberitos Dicen Bandiito
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Capybaritos Dicen Cocosini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Tuntuntuncitos Dicen Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bobritto Bandito
+  - Question: Can you guess who?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: ff0cd07409cdd0a44b5eac968f91250a, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 99542cf8dbd8ff042a7f18314e5f4589, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: ff0cd07409cdd0a44b5eac968f91250a, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 99542cf8dbd8ff042a7f18314e5f4589, type: 3}
+      Text: Los Bombinitos Dicen Bum Bum Buuum
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Boneca Ambalabu
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Tuntuntuncitos Dicen Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Blueberrinni Octopussini
+  - Question: I bet you can't guess who this is!
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 9cae97bcd9b8c424097946b3b923ea8f, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: f136beb0902d15e46925cc08a86ea312, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 9cae97bcd9b8c424097946b3b923ea8f, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: f136beb0902d15e46925cc08a86ea312, type: 3}
+      Text: Los Br Br Patapim Dicen Patapim
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Dlorbocitos Dicen Fruttodrillo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Tralaleritas Dicen Tralali
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Trulimero Trulicina
+  - Question: I bet you can't guess who this is!
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 92ebafd467c74244fa620a6c41e52254, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 79a0c9a842cc2024f84af5b724e707ca, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 92ebafd467c74244fa620a6c41e52254, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 79a0c9a842cc2024f84af5b724e707ca, type: 3}
+      Text: Los Capucinitas Dicen Mimimimi
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Svinino Bombondino
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Burito Hotspotini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ballerina Cappuccina
+  - Question: I bet you can't guess who this is!
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: b962b5bddbaaf5f4b83d30a18eb2ea83, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 1307ee0f08304ee4ab5278f57b780ef2, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: b962b5bddbaaf5f4b83d30a18eb2ea83, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 1307ee0f08304ee4ab5278f57b780ef2, type: 3}
+      Text: Los Capybaritos Dicen Cocosini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bobrini Cocosini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bobritto Bandito
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Burito Hotspotini
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 5238308095f43724084ecadb31723797, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: dd1e61cf9b0513f42b058248b3f5b963, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 5238308095f43724084ecadb31723797, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: dd1e61cf9b0513f42b058248b3f5b963, type: 3}
+      Text: Los Dlorbocitos Dicen Fruttodrillo
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Chimpanzini Bananini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Cocofanto Elefanto
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Frigo Camelo
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 6c50604d5a9348d438016dd035d59d8a, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: cc490844fd37ea64daa14c7170be043d, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 6c50604d5a9348d438016dd035d59d8a, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: cc490844fd37ea64daa14c7170be043d, type: 3}
+      Text: Los Espressonas Signoras Dicen Nocapuccini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ballerina Cappuccina
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Girafa Celestre
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Capuccino Assassino
+  - Question: Whose sound is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: afc33cc6584861547b02f470128d6a17, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 0345f0fd50a22b54aa58517e94621ba0, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: afc33cc6584861547b02f470128d6a17, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 0345f0fd50a22b54aa58517e94621ba0, type: 3}
+      Text: Los Pussinito Dicen Sushi
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Pussini Sushini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Crocodilitos Dicen Kabuum
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Frulli Frulla
+  - Question: Can you guess whose sound this is?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 377bae779a8fffc4198ae23581e005f0, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 9fd10275dfbe8324888ccb69db676bb9, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 377bae779a8fffc4198ae23581e005f0, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 9fd10275dfbe8324888ccb69db676bb9, type: 3}
+      Text: Los Salamino Pinguinos Dicen Salami
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Br Br Patapim Dicen Patapim
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Crocodilitos Dicen Kabuum
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Capucinitas Dicen Mimimimi
+  - Question: Can you guess whose sound this is?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: ba8ceeb5fafd67643becf133eb8566c6, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 319427d432bcb424a8e7a40f2535a73c, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: ba8ceeb5fafd67643becf133eb8566c6, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 319427d432bcb424a8e7a40f2535a73c, type: 3}
+      Text: Los Sodino Dicen Din Din Din Dun
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: U Din Din Din Din Dun Ma Din Din Din Dun
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tigrrullini Watermellini
+  - Question: Can you guess whose sound this is?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 151c1db14b749864f80f06e411183ee9, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 21226a01c636f0341bdfc459edaffdef, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 151c1db14b749864f80f06e411183ee9, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 21226a01c636f0341bdfc459edaffdef, type: 3}
+      Text: Los Spioniritos Dicen Golubini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Bombombini Gusini
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Spioniro Golubiro
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Rhino Toasterino
+  - Question: Who is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 9a460ce4138cc5d43a453945527724bd, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 745a11d1deff55c49b200cc9db9fb348, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 9a460ce4138cc5d43a453945527724bd, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 745a11d1deff55c49b200cc9db9fb348, type: 3}
+      Text: Los Troppis Dicen Tripi
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Trippi Troppi
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Los Pussinito Dicen Sushi
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Tric Trac Baraboom
+  - Question: Who is this?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: dba8c5a7e32f1364fb28d740fd5de40a, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 55e2ff40eb607cb46b44cec6147160d8, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: dba8c5a7e32f1364fb28d740fd5de40a, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 55e2ff40eb607cb46b44cec6147160d8, type: 3}
+      Text: Los Trulimeros Dicen Trulichina
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Trulimero Trulicina
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Lirili Rili Ralila
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Conversino Barbiglio
+  - Question: Baby Bobritto Bandito?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 2dc1df2a4c552204abd65368642c84fd, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 2ab6e53cd1e7f0948805403685f9b39a, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 2dc1df2a4c552204abd65368642c84fd, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 2ab6e53cd1e7f0948805403685f9b39a, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: 
+  - Question: Bombombini Gusini mini?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: ff0cd07409cdd0a44b5eac968f91250a, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 99542cf8dbd8ff042a7f18314e5f4589, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: ff0cd07409cdd0a44b5eac968f91250a, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 99542cf8dbd8ff042a7f18314e5f4589, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 46a86703d6a52824bade4f4133ef284e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 99542cf8dbd8ff042a7f18314e5f4589, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
+      Text: 
+  - Question: Baby Br Br Patapim?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 9cae97bcd9b8c424097946b3b923ea8f, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: f136beb0902d15e46925cc08a86ea312, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 9cae97bcd9b8c424097946b3b923ea8f, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: f136beb0902d15e46925cc08a86ea312, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 1d645b48724bff449b8e6c07da42d4a5, type: 3}
+      Text: 
+  - Question: Mi mi mi mi?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 92ebafd467c74244fa620a6c41e52254, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 79a0c9a842cc2024f84af5b724e707ca, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 92ebafd467c74244fa620a6c41e52254, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: f136beb0902d15e46925cc08a86ea312, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: cc490844fd37ea64daa14c7170be043d, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 725588b7147283f47a2e6ec36c8f0ac9, type: 3}
+      Text: 
+  - Question: Bobrini Cocosini mini?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: b962b5bddbaaf5f4b83d30a18eb2ea83, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 1307ee0f08304ee4ab5278f57b780ef2, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: b962b5bddbaaf5f4b83d30a18eb2ea83, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 1307ee0f08304ee4ab5278f57b780ef2, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 4b3258270ed2db041a150c818414dd01, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 0b5c8f6756c7f6e41b37ff61ae79c802, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: d4ed7f1a040cb6f43a21be1944b4b72f, type: 3}
+      Text: 
+  - Question: Los Glorbocitos Dicen Fruttodrillo?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 5238308095f43724084ecadb31723797, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: dd1e61cf9b0513f42b058248b3f5b963, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 5238308095f43724084ecadb31723797, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: dd1e61cf9b0513f42b058248b3f5b963, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: eee4e2d1dd8b13d4d8eaf7a123161e85, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3e235143d3343884fa71a07e5d4ac34e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 74e4647ca60f96d49a6b8fddbb1dd0fe, type: 3}
+      Text: 
+  - Question: Los Pussinito Dicen Sushi?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: afc33cc6584861547b02f470128d6a17, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 0345f0fd50a22b54aa58517e94621ba0, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: afc33cc6584861547b02f470128d6a17, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 0345f0fd50a22b54aa58517e94621ba0, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 037c36383dc3bdd46b5ab2f983dd1398, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 52d9d20aeeaddbc4f9eb7dbb2117443a, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
+      Text: 
+  - Question: Los Salamino Pinguinos Dicen Salami?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 377bae779a8fffc4198ae23581e005f0, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 9fd10275dfbe8324888ccb69db676bb9, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 377bae779a8fffc4198ae23581e005f0, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 9fd10275dfbe8324888ccb69db676bb9, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 0b5c8f6756c7f6e41b37ff61ae79c802, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 4b3258270ed2db041a150c818414dd01, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 789ab53530d39164f99ce6ec4d4806d7, type: 3}
+      Text: 
+  - Question: U Din Din Din Din Dun Ma Din Din Din Dun mini?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: ba8ceeb5fafd67643becf133eb8566c6, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 319427d432bcb424a8e7a40f2535a73c, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: ba8ceeb5fafd67643becf133eb8566c6, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 319427d432bcb424a8e7a40f2535a73c, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: b1ecb43f39719d948b398e6a3cae1683, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 0be2cbb664a05484481b2e860cdc7afe, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 52d9d20aeeaddbc4f9eb7dbb2117443a, type: 3}
+      Text: 
+  - Question: Spioniro Golubiro baby?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 151c1db14b749864f80f06e411183ee9, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 21226a01c636f0341bdfc459edaffdef, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 151c1db14b749864f80f06e411183ee9, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 21226a01c636f0341bdfc459edaffdef, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: e80d476c715005b4b8f924af53346e88, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: eee4e2d1dd8b13d4d8eaf7a123161e85, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
+      Text: 
+  - Question: Los Troppis Dicen Tripi?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 9a460ce4138cc5d43a453945527724bd, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 745a11d1deff55c49b200cc9db9fb348, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 9a460ce4138cc5d43a453945527724bd, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 745a11d1deff55c49b200cc9db9fb348, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 7f1a5c723c8927b41b25c6296603f867, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 3e235143d3343884fa71a07e5d4ac34e, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
+      Text: 
+  - Question: Los Trulimeros Dicen Trulichina
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: dba8c5a7e32f1364fb28d740fd5de40a, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: 55e2ff40eb607cb46b44cec6147160d8, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: dba8c5a7e32f1364fb28d740fd5de40a, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: 55e2ff40eb607cb46b44cec6147160d8, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: eb40e11c59160db4187bf79bc623ad02, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 336c2da4c9ca3dc41aafe595a58689d3, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 57a7a08fe382b4949b3269dfff7b3893, type: 3}
+      Text: 
+  - Question: Baby Espressona Signora?
+    Type: 0
+    CorrectAudioClip: {fileID: 8300000, guid: 6c50604d5a9348d438016dd035d59d8a, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: cc490844fd37ea64daa14c7170be043d, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 6c50604d5a9348d438016dd035d59d8a, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: cc490844fd37ea64daa14c7170be043d, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 06b148baa85a7eb4d8a2fb6aea0dff82, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: a7f18e95c9dc7a34ca17a5d636e4a4e6, type: 3}
+      Text: 
+    - Answer: 0
+      Sprite: {fileID: 21300000, guid: 1307ee0f08304ee4ab5278f57b780ef2, type: 3}
+      Text: 
+  - Question: Who is this?
+    Type: 2
+    CorrectAudioClip: {fileID: 8300000, guid: 35f3554c7e006464897157c214afc0c2, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: a283608a6bded0b4ea798687c38b7880, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 35f3554c7e006464897157c214afc0c2, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: a283608a6bded0b4ea798687c38b7880, type: 3}
+      Text: Espressona Signora
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ballerina Cappuccina
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Sahur
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Orcalero Orcala
+  - Question: Can you guess who?
+    Type: 1
+    CorrectAudioClip: {fileID: 8300000, guid: 35f3554c7e006464897157c214afc0c2, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: a283608a6bded0b4ea798687c38b7880, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: 35f3554c7e006464897157c214afc0c2, type: 3}
+    QuizzAnswers:
+    - Answer: 1
+      Sprite: {fileID: 21300000, guid: a283608a6bded0b4ea798687c38b7880, type: 3}
+      Text: Espressona Signora
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Capuccino Assassino
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ballerina Cappuccina
+    - Answer: 0
+      Sprite: {fileID: 0}
+      Text: Ballerino Lololo
+  quizzesPerGame: 8
