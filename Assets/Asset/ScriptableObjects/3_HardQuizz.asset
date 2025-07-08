@@ -924,13 +924,13 @@ MonoBehaviour:
       Sprite: {fileID: 21300000, guid: 2ab6e53cd1e7f0948805403685f9b39a, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 0}
+      Sprite: {fileID: 21300000, guid: 6d00bfd44733969468ebac60d5937b0c, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 0}
+      Sprite: {fileID: 21300000, guid: d4ed7f1a040cb6f43a21be1944b4b72f, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 0}
+      Sprite: {fileID: 21300000, guid: 32c8ef5f1fe337e4586f9e5f3ca1749b, type: 3}
       Text: 
   - Question: Bombombini Gusini mini?
     Type: 0
@@ -945,7 +945,7 @@ MonoBehaviour:
       Sprite: {fileID: 21300000, guid: 46a86703d6a52824bade4f4133ef284e, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 21300000, guid: 99542cf8dbd8ff042a7f18314e5f4589, type: 3}
+      Sprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 86bcea17c441dea45af7935f0d65bf73, type: 3}
