@@ -1354,16 +1354,16 @@ MonoBehaviour:
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: c6703ceb2c5a75a4eb516f7258dc1193, type: 3}
-      Text: 
+      Text: Trippi Troppi
     - Answer: 0
       Sprite: {fileID: 21300000, guid: eb40e11c59160db4187bf79bc623ad02, type: 3}
-      Text: 
+      Text: Trulimero Trulicina
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 7adb8a3435adc2a418a340fa9433b8ce, type: 3}
-      Text: 
+      Text: Tric Trac Baraboom
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 84f9c3f680af4174181d96faf25329bd, type: 3}
-      Text: 
+      Text: Cacto Ippopotamo
   - Question: Can you guess who?
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
@@ -1372,16 +1372,16 @@ MonoBehaviour:
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: 96befd44ce5d30141b0e6b2c18e415c8, type: 3}
-      Text: 
+      Text: Bri Bri Bicus Dicus
     - Answer: 0
       Sprite: {fileID: 21300000, guid: eee4e2d1dd8b13d4d8eaf7a123161e85, type: 3}
-      Text: 
+      Text: Frulli Frulla
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 686c52199d05c5d44a7633f4bd8deb3a, type: 3}
-      Text: 
+      Text: Bombombini Gusini
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 879faaaa9b3d0094b8745156e6457093, type: 3}
-      Text: 
+      Text: Orcalero Orcala
   - Question: Can you guess who?
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: 833bcc2080069f94d850ee75e7085346, type: 3}
@@ -1390,16 +1390,16 @@ MonoBehaviour:
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: 6b0b5389ca0c05a4695ef52e96a68ef2, type: 3}
-      Text: 
+      Text: Pot Hotspot
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 0c52417a24de6d44cbe6d03c29a598f5, type: 3}
-      Text: 
+      Text: Burito Hotspotini
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 6d00bfd44733969468ebac60d5937b0c, type: 3}
-      Text: 
+      Text: Bobritto Bandito
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 0b5c8f6756c7f6e41b37ff61ae79c802, type: 3}
-      Text: 
+      Text: Penguino Cocosino
   - Question: Can you guess who?
     Type: 2
     CorrectAudioClip: {fileID: 8300000, guid: f0fbe6906ab307549aa3294148fd2a67, type: 3}
@@ -1408,16 +1408,16 @@ MonoBehaviour:
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: d4ed7f1a040cb6f43a21be1944b4b72f, type: 3}
-      Text: 
+      Text: Bobrini Cocosini
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 4b3258270ed2db041a150c818414dd01, type: 3}
-      Text: 
+      Text: Cocofanto Elefanto
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 1307ee0f08304ee4ab5278f57b780ef2, type: 3}
-      Text: 
+      Text: Los Capybaritos Dicen Cocosini
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 0b5c8f6756c7f6e41b37ff61ae79c802, type: 3}
-      Text: 
+      Text: Penguino Cocosino
   - Question: Who is not La vaca Saturno Saturnita?
     Type: 0
     CorrectAudioClip: {fileID: 8300000, guid: 3ff3f6bc93344a947b9527a25c2306fa, type: 3}
@@ -1479,7 +1479,7 @@ MonoBehaviour:
     QuestionAudioClip: {fileID: 8300000, guid: 3011b715558b7194c86b7e4de47d8e55, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 21300000, guid: a747c7f2c61b47b43a3a98aa282899cf, type: 3}
+      Sprite: {fileID: 21300000, guid: c4300a5abb3ef8b47adf8983f1683b6d, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 2b92d4171aea4824d9c6edf87dc3d82c, type: 3}
@@ -1659,7 +1659,7 @@ MonoBehaviour:
     QuestionAudioClip: {fileID: 8300000, guid: 90bbebfd9992cc849beb8e0c1144a0d0, type: 3}
     QuizzAnswers:
     - Answer: 1
-      Sprite: {fileID: 21300000, guid: e7925a599abd8a04a9e91058886423e5, type: 3}
+      Sprite: {fileID: 21300000, guid: 7d9a2e1f2fd053849a5adfbda8196f09, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: e2139a60fa202fa47af0835e78f27db2, type: 3}
