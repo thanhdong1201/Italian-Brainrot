@@ -55,6 +55,7 @@ public class AdManager : MonoBehaviour
         RequestConfiguration requestConfiguration = new RequestConfiguration
         {
             TagForChildDirectedTreatment = TagForChildDirectedTreatment.True,
+            TagForUnderAgeOfConsent = TagForUnderAgeOfConsent.True,
             MaxAdContentRating = MaxAdContentRating.G
         };
         MobileAds.SetRequestConfiguration(requestConfiguration);

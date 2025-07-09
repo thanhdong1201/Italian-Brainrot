@@ -1149,9 +1149,9 @@ MonoBehaviour:
       Text: 
   - Question: Who is not wearing shoes?
     Type: 0
-    CorrectAudioClip: {fileID: 8300000, guid: e6e6c89ff4da81b4e8a15491cb966df6, type: 3}
-    QuestionSprite: {fileID: 21300000, guid: 36e83320ba0b00c478f241777bb01f8a, type: 3}
-    QuestionAudioClip: {fileID: 8300000, guid: e6e6c89ff4da81b4e8a15491cb966df6, type: 3}
+    CorrectAudioClip: {fileID: 8300000, guid: bf37b58a106b0c3469214e86a29f68da, type: 3}
+    QuestionSprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
+    QuestionAudioClip: {fileID: 8300000, guid: bf37b58a106b0c3469214e86a29f68da, type: 3}
     QuizzAnswers:
     - Answer: 1
       Sprite: {fileID: 21300000, guid: f133876495dbe9e4b8da7db4c7fd3641, type: 3}
