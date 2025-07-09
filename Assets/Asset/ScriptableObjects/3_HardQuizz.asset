@@ -1125,7 +1125,7 @@ MonoBehaviour:
       Sprite: {fileID: 21300000, guid: 06b148baa85a7eb4d8a2fb6aea0dff82, type: 3}
       Text: 
     - Answer: 0
-      Sprite: {fileID: 21300000, guid: a7f18e95c9dc7a34ca17a5d636e4a4e6, type: 3}
+      Sprite: {fileID: 21300000, guid: 06b148baa85a7eb4d8a2fb6aea0dff82, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: 1307ee0f08304ee4ab5278f57b780ef2, type: 3}
