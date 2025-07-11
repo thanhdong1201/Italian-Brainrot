@@ -1211,7 +1211,7 @@ MonoBehaviour:
       Sprite: {fileID: 21300000, guid: 59a60a4745ee13f46aefe5593405032c, type: 3}
       Text: Ti Ti Ti Ti Ti Ti Ti Sahur
     - Answer: 0
-      Sprite: {fileID: 21300000, guid: e7e4603d770d45c43adad2bd6dcad910, type: 3}
+      Sprite: {fileID: 21300000, guid: 1d645b48724bff449b8e6c07da42d4a5, type: 3}
       Text: 
     - Answer: 0
       Sprite: {fileID: 21300000, guid: d2375d0b31781e24898c428867533fdd, type: 3}
